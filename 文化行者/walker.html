@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>行者•之道</title>
+<meta content="IE=edge" http-equiv="X-UA-Compatible">
+<meta content="width=device-width, initial-scale=1" name="viewport">
+
+	<link href="images/bitbug_favicon.ico" rel="shortcut icon">
+
+    <!--styles-->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/owl.carousel.css" rel="stylesheet">
+    <link href="css/magnific-popup.css" rel="stylesheet">
+
+	<link rel="stylesheet" href="css/walker.css">
+    <link href="css/humanity.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/alpha.css">
+	<link rel="stylesheet" href="css/animate.css">
+
+	 <link href="css/login/normalize.css" rel="stylesheet">
+     <link href="css/login/style.css" rel="stylesheet">
+
+	<script src="js/modernizr.custom.js"></script>
+
+
+<!--[if lt IE 9]>
+   <script type="text/javascript" src="js/html5shiv.min.js"></script>
+<![endif]-->
+</head>
+<body>
+
+
+<!--HEADER -->
+<div class="header">
+  <div class="menu-wrap">
+	<nav class="menu">
+	  <div class="menu-list">
+
+		<a  id="login_id"  href="javascript:;" target="_blank">
+		  <span>登录•注册</span>
+		</a>
+		<a  id="welcome_id" target="_blank">
+		  <span id="welcome"></span>
+		</a>
+		<a  id="logout_id" href="javascript:;" target="_blank">
+		  <span>退出登录</span>
+		</a>
+		<a  href="index.html" target="_blank">
+		  <span>首页</span>
+		</a>
+		<a id="humanity_id" href="humanity.html" target="_blank">
+		  <span>非遗•人文</span>
+		</a>
+		<a id="culture_id" href="culture.html" target="_blank">
+		  <span>文化•教育</span>
+		</a>
+		<a id="walker_id" href="walker.html" class="active" target="_blank">
+		  <span>行者•之道</span>
+		</a>
+
+	  </div>
+	</nav>
+	<button class="close-button" id="close-button">Close Menu</button>
+  </div>
+  <button class="menu-button" id="open-button">
+	<!--<span></span>-->
+	<!--<span></span>-->
+	<!--<span></span>-->
+	  <img src="images/nav_title.png" alt="">
+  </button><!--/.for-sticky-->
+</div>
+
+
+<!--登陆注册-->
+
+<!--LOGIN -->
+<div id="gray-login"></div>
+<div class="popup" id="popup-login">
+	<div class="top_nav" id='top_nav_login'>
+		<div align="center">
+			<span>登录账号</span>
+			<a class="guanbi" id="close-login"></a>
+		</div>
+	</div>
+	<div class="min">
+		<div class="tc_login"> 
+			<div class="right">
+				<form name="login_form" id="login_form" target="_top">
+					<div align="center">
+						<i class="icon-mobile-phone"></i>
+						<input type="text" name="user_name" id="user_name" required="required" placeholder="用户名" autocomplete="off" class="input_yh">
+						<input type="password" name="user_password" id="user_password" required="required" placeholder="密码" autocomplete="off" class="input_mm">
+					</div>
+					<div align="center">
+						<input class="button" title="Sign In" id="login_bt" value="登录">
+					</div>
+				</form>   
+				<dd>
+					<div align="center" id="register-btn" target="_blank"><a href="javascript:;">立即注册</a></div>
+				</dd>
+				<hr align="center" />
+			</div>		
+		</div>
+	</div>
+</div>
+<!-- LOGIN END -->
+
+<!--Register -->
+<div id="gray-login"></div>
+<div class="popup" id="popup-register">
+	<div class="top_nav" id='top_nav_register'>
+		<div align="center">
+			<span>注册账号</span>
+			<a class="guanbi" id="close-register"></a>
+		</div>
+	</div>
+	<div class="min">
+		<div class="tc_login"> 
+			<div class="right" style="margin-top:-15px;">
+				<form name="register_form" id="register_form" target="_top">
+				  <!--  <input type="hidden" id="register" name="register" value="<%=register%>" />-->
+					<div align="center">
+						<input class="input_yh" required="required" name="t_UserName" id="t_UserName" placeholder="用户名" onblur="checkusername(this.value);" type="text" /><span id="t_UserNameTip" class="onShow"></span>
+
+						<input  class="input_mm" required="required" placeholder="密码" onblur="return checkpasswd(this);" id="t_UserPass" name="t_UserPass" type="password"/><span id="t_UserPassTip" class="onShow"></span>
+
+                		<input class="input_mm" required="required" placeholder="再次输入密码" onblur="checkdoublepassword();" class="reg_input" type="password" id="t_RePass" name="t_RePass"/><span id="t_RePassTip" class="onShow"></span>
+                   </div>
+					<div align="center">
+						<input class="button" title="Register" id="register_bt" value="免费注册">
+					</div>
+				</form>   
+			</div>		
+		</div>
+	</div>
+</div>
+<!-- Register END -->
+<!--登录注册-->
+
+<!--CONTENT WRAP-->
+<div class="content-wrap" id="top">
+  <!--CONTENT-->
+  <div class="content walker">
+	  <!--HOME-->
+	  <section id="home">
+		  <div class="bg_icon"></div>
+	  </section>
+
+	  <!-- 页面内导航 -->
+	  <section class="nav_div">
+		  <div class="paging_nav">
+			  <nav>
+				  <ul class="paging_list">
+					  <li><p id="about_link" >何为行者</p></li>
+					  <li><p id="employement_link">经年历事</p></li>
+					  <li><p id="work_link">心语邮寄</p></li>
+					  <li><p id="diet_link">风采展示</p></li>
+				  </ul>
+			  </nav>
+		  </div>
+	  </section>
+
+	  <!-- 何为行者 -->
+	  <section class="introduce"  id="about">
+		  <div class="intro_title aniview" av-animation="bounceInDown">
+			  <img class="walk_title_img" src="images/heweixingzhe.png" alt="">
+		  </div>
+
+		  <ul class="portfolio-image">
+			  <li class="col-md-6 aniview" av-animation="bounceInLeft">
+				  <a href="images/intro1.jpg"><img alt="image" src="images/intro1.jpg">
+					  <div class="decription-wrap"></div>
+				  </a>
+			  </li>
+			  <li class="col-md-6 blue-bg aniview" av-animation="bounceInLeft">
+				  <a>
+					  <div class="decription-wrap">
+						  <div class="image-bg">
+							  <p class="desc">
+								  文化行者青年计划是由兰州文化行者文化交流中心发起实施的公益项目，旨在搭建青年参与中国文化多样性保护工作的高端社会实践平台，不断培养青年生力军和未来文化传承人。
+							  </p>
+						  </div>
+					  </div>
+				  </a>
+			  </li>
+			  <li class="col-md-6 blue-bg aniview" av-animation="bounceInLeft">
+				  <a>
+					  <div class="decription-wrap">
+						  <div class="image-bg">
+							  <p class="desc project_number">
+								  <span><i class="fa fa-users"></i> 行者数量 875</span>
+							      <span><i class="fa fa-building-o"></i> 项目数量 67</span>
+							      <span><i class="fa fa-book"></i> 团队数量 77</span>
+							      <span><i class="fa fa-graduation-cap"></i> 高校数量 95%</span>
+							  </p>
+						  </div>
+					  </div>
+				  </a>
+			  </li>
+			  <li class="col-md-6 aniview" av-animation="bounceInLeft">
+				  <a href="images/intro4.jpg"><img alt="image" src="images/intro4.jpg">
+					  <div class="decription-wrap"></div>
+				  </a>
+			  </li>
+		  </ul>
+	  </section>
+
+	  <!--经年历事-->
+	  <section class="experience grey-bg" id="employement">
+		  <div class="intro_title aniview" av-animation="bounceInDown">
+			  <img class="walk_title_img" src="images/jingnianlishi.png" alt="">
+		  </div>
+		  <div class="container">
+			  <div class="main aniview" av-animation="bounceInRight">
+				  <ul class="cbp_tmtimeline">
+					  <li>
+						  <time class="cbp_tmtime" datetime="2012-12-25 18:30"><span>
+						2012</span> <span>25/12</span></time>
+						  <div class="cbp_tmicon cbp_tmicon-phone"></div>
+						  <div class="cbp_tmlabel">
+							  <h2>“兰州大学文化多样性保护项目”<a class="intro_more_btn more_btn1">more</a></h2>
+							  <p>文化行者青年计划最初发源于兰州大学，前身是兰州大学收藏协会非物质文化遗产小组（2007）和兰州大学大学生文化遗产保护中心（2009）发起实施的“兰州大学文化多样性保护项目”，致力于提升青年大学生在文化多样性保护领域的参与机会和意识。</p>
+						  </div>
+					  </li>
+					  <li>
+						  <time class="cbp_tmtime" datetime="2013-04-11T12:04"><span>
+						2014</span> <span>1/4</span></time>
+						  <div class="cbp_tmicon cbp_tmicon-screen"></div>
+						  <div class="cbp_tmlabel">
+							  <h2>“中国青少年文化遗产行动计划”<a class="intro_more_btn more_btn2">more</a></h2>
+							  <p>2012年，文化行者青年计划早期的核心成员王龙魁、赵超两人将其带至成都发展，先后邀请四川大学、西南民族大学、西北民族大学等高校加入该计划，逐渐扩展在西北地区和西南地区的高校工作，每年支持约超过300名志愿者和近50位学者在当地开展文化多样性保护工作，实施工作领域从“非物质文化遗产普查”逐渐扩展至“促进少数民族文化传承教育”、“少数民族社区营造与文化发展”、“文化遗产青少年教育”等。</p>
+						  </div>
+					  </li>
+					  <li>
+						  <time class="cbp_tmtime" datetime="2013-04-13 05:36"><span>
+						2017</span> <span>20/1</span></time>
+						  <div class="cbp_tmicon cbp_tmicon-mail"></div>
+						  <div class="cbp_tmlabel">
+							  <h2>“兰州文化行者文化交流中心”<a class="intro_more_btn more_btn1">more</a></h2>
+							  <p>文化行者青年计划最初发源于兰州大学，前身是兰州大学收藏协会非物质文化遗产小组（2007）和兰州大学大学生文化遗产保护中心（2009）发起实施的“兰州大学文化多样性保护项目”，致力于提升青年大学生在文化多样性保护领域的参与机会和意识。</p>
+						  </div>
+					  </li>
+				  </ul>
+			  </div>
+		  </div>
+	  </section>
+
+	  <!--心语邮寄-->
+	  <section class="mood-email" id="work">
+		  <div class="intro_title aniview" av-animation="bounceInDown">
+			  <img class="walk_title_img" src="images/xinyuyouji.png" alt="">
+		  </div>
+		  <section id="testimonials" class="aniview" av-animation="bounceInLeft">
+			  <div class="testim-ovl">
+			  </div>
+			  <div class="testimonials-wrapper">
+					  <ul class="testimonials-line">
+						  <li class="customer">
+							  <div class="testimonial-bubble">
+								  <p>
+									  期待每一个拥有梦想的你来这里诉说你的心声。
+								  </p>
+							  </div>
+							  <div class="cus-profile">
+                                  <span class="cus-image">
+								      <img src="images/te1.png">
+									  <span>你们说</span>
+                                   </span>
+							  </div>
+						  </li>
+						  <li class="customer">
+							  <div class="testimonial-bubble">
+								  <p>
+									  文化行者就像一个大家庭一直温暖着我。
+								  </p>
+							  </div>
+							  <div class="cus-profile">
+                                  <span class="cus-image">
+                                      <img src="images/te2.png">
+									  <span>行者说</span>
+                                  </span>
+							  </div>
+						  </li>
+						  <li class="customer">
+							  <div class="testimonial-bubble">
+								  <p>
+									  喜欢温柔的小姐姐们和阳光帅气的大哥哥们。
+								  </p>
+							  </div>
+							  <div class="cus-profile">
+                                  <span class="cus-image">
+                                      <img src="images/te3.png">
+									  <span>孩子说</span>
+								  </span>
+							  </div>
+						  </li>
+						  <li class="customer">
+							  <div class="testimonial-bubble">
+								  <p>
+									  相比较于传统教学，文化教学有非常深刻的教育意义和必要性。
+								  </p>
+							  </div>
+							  <div class="cus-profile">
+                                  <span class="cus-image">
+                                      <img src="images/te4.png">
+									  <span>学校说</span>
+                                  </span>
+                              </div>
+						  </li>
+                         <span id="prev"></span>
+                         <span id="next"></span>
+					  </ul>
+				  </div>
+		  </section>
+
+	  </section>
+
+
+	  <!-- 风采展示 -->
+	  <div class="elegant-show container demo-3" id="diet">
+		  <div class="intro_title aniview" av-animation="bounceInDown">
+			  <img class="walk_title_img" src="images/fengcaizhanshi.png" alt="">
+		  </div>
+
+		  <ul class="grid cs-style-5 aniview" av-animation="bounceInRight">
+
+			  <li>
+
+					  <figure>
+
+						  <img src="images/show4.jpg" alt="img04">
+
+						  <figcaption>
+
+							  <span>行者每天都会和小朋友一起做手工</span>
+
+
+						  </figcaption>
+
+					  </figure>
+
+				  </li>
+
+			  <li>
+					  <figure>
+						  <img src="images/show5.jpg" alt="img05">
+						  <figcaption>
+							  <span>优秀行者在支教期间</span>
+						  </figcaption>
+					  </figure>
+				  </li>
+
+			  <li>
+
+					  <figure>
+
+						  <img src="images/show1.jpg" alt="img01">
+
+						  <figcaption>
+
+
+							  <span>孩子们在志愿者指导下学会独立完成手工</span>
+
+
+						  </figcaption>
+
+					  </figure>
+
+				  </li>
+
+			  <li>
+
+					  <figure>
+
+						  <img src="images/show2.jpg" alt="img02">
+
+						  <figcaption>
+
+
+							  <span>小朋友朗诵诗歌别有一番风味</span>
+
+
+						  </figcaption>
+
+					  </figure>
+
+				  </li>
+
+			  <li>
+
+					  <figure>
+
+						  <img src="images/show6.jpg" alt="img06">
+
+						  <figcaption>
+
+
+							  <span>志愿者会带教孩子们折各种纸船</span>
+
+
+						  </figcaption>
+
+					  </figure>
+
+				  </li>
+
+			  <li>
+
+					  <figure>
+
+						  <img src="images/show3.jpg" alt="img03">
+
+						  <figcaption>
+
+							  <span>女生们展示刚刚学会的锅庄舞</span>
+
+						  </figcaption>
+
+					  </figure>
+
+				  </li>
+
+		  </ul>
+
+	  </div>
+
+
+	  <!--FOOTER-->
+	  <footer>
+		  <div class="footer_link">
+			  <div class="footer_left">
+				  <h2>文化行者，我们在路上</h2>
+				  <ul>
+					  <li>友情链接： </li>
+					  <li><a href="http://page.renren.com/601463454?checked=true">人人网</a></li>
+					  <li><a href="http://culkorchengdu.blog.163.com/">博客</a></li>
+					  <li><a href="https://baike.baidu.com/item/%E5%9B%9B%E5%B7%9D%E5%A4%A7%E5%AD%A6%E6%96%87%E5%8C%96%E8%A1%8C%E8%80%85%E5%9B%A2%E9%98%9F/19899404?fr=aladdin&fromid=19212644&fromtitle=%E5%9B%9B%E5%B7%9D%E5%A4%A7%E5%AD%A6%E6%96%87%E5%8C%96%E8%A1%8C%E8%80%85">百度百科</a></li>
+				  </ul>
+			  </div>
+			  <div class="footer_right">
+				  <div>
+					  <img src="images/weibo.png" alt="">
+					  <p>微博</p>
+				  </div>
+				  <div>
+					  <img src="images/weixin.jpg" alt="">
+					  <p>微信</p>
+				  </div>
+			  </div>
+		  </div>
+
+		  <div class="footer-top">
+			  <ul class="socials">
+				  <li class="twitter">
+					  <a href="#" data-hover="文化行者，我们在路上。">文化行者，我们在路上</a>
+				  </li>
+			  </ul>
+		  </div>
+	  </footer>
+
+  </div>
+
+</div>
+
+<div class="theme-popover">
+	<div class="theme-poptit">
+		<a href="javascript:;" title="关闭" class="close">×</a>
+	</div>
+	<div class="theme-popbod dform">
+		<form class="theme-signin" name="loginform" action="" method="post">
+			<input type="text"  name="first name" placeholder="姓名" required="" />
+			<input type="email"   name="Email address" placeholder="邮箱" required="" />
+			<input type="text" class="phone" name="Phone number" placeholder="电话" required=""/>
+			<textarea  placeholder="留言" required=""></textarea>
+			<input class="btn btn-primary" type="submit" name="submit" value=" 登 录 " />
+		</form>
+	</div>
+</div>
+<div class="theme-popover-mask"></div>
+
+<div class="returnTop"><span id="returnTop">＜</span></div>
+<script src="js/jquery-1.9.1.min.js" type="text/javascript"></script>
+<script src="js/walker.js" type="text/javascript"></script>
+
+<script src="js/bootstrap.min.js" type="text/javascript"></script>
+<script src="js/classie.js" type="text/javascript"></script>
+<script src="js/owl.carousel.min.js" type="text/javascript"></script>
+<script src="js/jquery.magnific-popup.min.js" type="text/javascript"></script>
+<script src="js/smooth-scroll.min.js" type="text/javascript"></script>
+<script src="js/typed.js" type="text/javascript"></script>
+<script src="js/humanity.js" type="text/javascript"></script>
+<script src="js/modernizr.custom.js"></script>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquerypp.custom.js"></script>
+
+<script src="js/alpha.js" type="text/javascript"></script>
+<script src="js/jquery.aniview.min.js"></script>
+
+<script>
+	var options = {
+		animateThreshold: 100,
+		scrollPollInterval: 50
+	}
+	$('.aniview').AniView(options);
+</script>
+
+
+<!-- 初始化容器 start -->
+<script type="text/javascript">
+	$(document).ready(function() {
+		$('#testimonials').alpha();
+	});
+
+</script>
+<!-- 初始化容器 end -->
+
+</body>
+</html>
+
+<!-- Register -->
+<script src="js/register/formValidator_min.js" type="text/javascript" charset="UTF-8"></script>
+<script src="js/register/jquery-1.2.6.min.js" type=text/javascript></script>
+<script src="js/register/formValidatorRegex.js" type="text/javascript" charset="UTF-8"></script>
+<!-- Register End -->
+<!-- Login -->
+<script scr="js/login/jquery-1.11.0.min.js"></script>
+<script type="text/javascript">
+   var jq110=$.noConflict(true);
+ </script>
+
+<script src="js/login/login.js" type="text/javascript"></script>

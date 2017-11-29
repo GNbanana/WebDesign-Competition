@@ -1,0 +1,128 @@
+/* 清除内外边距 */
+body, h3, h5,  p,
+dl, dt, dd, ul, ol, li,
+pre, input, td {
+    margin: 0;
+    padding: 0;
+}
+
+/* 设置默认字体 */
+body,
+button, input, select, textarea { /* for ie */
+    /*font: 12px/1 Tahoma, Helvetica, Arial, "宋体", sans-serif;*/
+    font: 12px/1 Tahoma, Helvetica, Arial, "\5b8b\4f53", sans-serif;
+}
+textarea{ resize:none;}
+h1 { font-size: 18px; }
+h2 { font-size: 16px; }
+h3 { font-size: 14px; }
+h4, h5, h6 { font-size: 100%; }
+
+em { font-style: normal; } /* 将斜体扶正 */
+pre { font-family: "Courier New", Courier, monospace; } /* 统一等宽字体 */
+small { font-size: 12px; }
+
+/* 重置列表元素 */
+ul, li, ol { list-style: none; }
+
+/* 重置文本格式元素 */
+a:hover { text-decoration: none; }
+
+abbr[title], acronym[title] { /* 注：1.ie6 不支持 abbr; 2.属性选择符，ie6 下无效果 */
+    border-bottom: 1px dotted;
+    cursor: help;
+}
+
+q:before, q:after { content: ''; }
+
+/* 重置表单元素 */
+
+fieldset, img { border: none; } /*让链接里的 img 无边框 */
+button, input, select, textarea {
+    font-size: 100%;
+}
+
+/* 重置表格元素 */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* 重置 hr */
+hr {
+    border: none;
+    height: 1px;
+}
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+    font-size:0;
+}
+.clearfix { *zoom:1;}
+
+/* chrome input自动填充黄色背景 */
+input:-webkit-autofill { -webkit-box-shadow: 0 0 0px 1000px white inset;}
+
+@font-face {
+    font-family: 'ErasDemiITC';
+    src: url('font/ErasDemiITC.eot');
+    src: local('Eras Demi ITC'),
+    local('fontName'),
+    url('font/ErasDemiITC.woff') format('woff'),
+    url('font/ErasDemiITC.ttf') format('truetype'),
+    url('font/ErasDemiITC.svg#fontName') format('svg');
+}
+
+a:focus{outline:none;}
+:focus { outline:0; }
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, main {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}

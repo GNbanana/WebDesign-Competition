@@ -1,0 +1,138 @@
+@charset "utf-8";
+.tophead{
+    width:100px;
+    height:83px;
+    margin:0 auto;
+    position:relative;
+}
+.container_image{
+    width:1180px;
+    height:530px;
+    margin:0 auto;
+    position:relative;
+}
+.container_image .i_btn{
+    display:block;
+    width:34px;
+    height:80px;
+    position:absolute;
+    top:225px;
+    z-index:3;
+    background-image:url(../images/a_l.png);
+}
+.container_image .prev_L{
+    left:136px;
+    background-position:0 0;
+}
+.container_image .next_R{
+    right:136px;
+    background-position:-34px 0;
+}
+.slide_img {
+    width:640px;
+    height:400px;
+    position:relative;
+    z-index:1;
+}
+.slide_img li{
+    width:180px;
+    height:380px;
+    overflow:hidden;
+    position:absolute;
+    top:15px;
+}
+
+.slide_img li a{
+    display:block;
+    position:relative;
+    width:100%;
+    height:100%;
+    height:500px;
+}
+.slide_img li a img{
+    position:absolute;
+    height:100%;
+}
+.slide_img li.on a{
+    height:530px;
+}
+.slide_img li.on{
+    width:640px;
+    left:190px;
+    top:0;
+    overflow:hidden;
+}
+.slide_img li.on img{
+    width:100%;
+}
+.slide_img li.left{
+    left:0;
+}
+.slide_img li.right{
+    left:1000px;
+}
+.slide_img li.mid{
+    left:190px;
+}
+.slide_img li .info{
+    height:134px;
+    padding-top:6px;
+    position:absolute;
+    left:0;
+    bottom:0;
+    width:94%;
+    padding:0 3%;
+    color:#ffffff;
+    display:none;
+    z-index:3;
+}
+.slide_img li .icon{
+    background:url(../images/a_more.png) no-repeat 0 0;
+    width:60px;
+    height:60px;
+    position:absolute;
+    left:370px;
+    bottom:30px;
+    z-index:4;
+}
+.slide_img li.on .icon{
+    display:block;
+}
+.slide_img li .bg{
+    width:100%;
+    height:142px;
+    background:#000000;
+    opacity:0.6;
+    -moz-opacity:0.6;
+    filter:alpha(opacity=60);
+    position:absolute;
+    left:0;
+    bottom:0;
+    z-index:0;
+    display:none;
+}
+.slide_img li .info span{
+    font-size:18px;
+    display:block;
+    padding:7px 0;
+    height:36px;
+    overflow:hidden;
+    padding-left:12px;
+
+    line-height:36px;
+}
+.slide_img li .info p{
+    font-size:16px;
+    line-height:24px;
+    height:48px;
+    overflow:hidden;
+}
+.slide_img li .info i{
+    display:block;width:60px;height:60px;
+    background:url(../images/a_more.png) no-repeat 0 -60px;
+    cursor:pointer;
+    position:absolute;
+    left:50%;
+    margin-left:-30px;
+    top:-30px;
+}

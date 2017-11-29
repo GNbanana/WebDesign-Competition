@@ -1,0 +1,104 @@
+@charset "utf-8";
+*{padding:0px;margin:0px;}
+
+
+/*--弹窗样式--*/
+
+#gray{width:100%;height:100%;background:rgba(0,0,0,0.3);position:fixed;top:0px;display:none;z-index:99;}
+
+.popup{
+	width:370px; 
+	height:auto;
+	background-color:rgb(177, 179, 185);
+	position:absolute;
+	z-index:1000;
+	border:8px solid #ebeaea;
+	display:none;
+}
+.popup .top_nav{
+	width:360px;
+	height:46px;;
+	border-bottom:1px solid #ebeaea;
+	position:relative;
+	cursor:move;
+}
+.popup .top_nav i{width:35px;height:35px;background:url(../images/sucai_tubiao.png) -314px -5px;position:absolute;top:6px;left:8px;display:block; }
+.popup .top_nav span{font:18px/18px 'microsoft yahei';color:#000;display:block;position:absolute;top:13px;left:50px;}
+
+.popup .top_nav a.guanbi { background:url(../../images/popup_guanbi.png) repeat 0px 0px; width:35px; height: 35px; display: block; position:absolute;top:8px;right:10px;cursor:pointer;}
+.popup .top_nav a.guanbi span { display: none;}
+.popup .top_nav a.guanbi:hover { background: url(../../images/popup_guanbi.png) repeat 0px -35px; }
+.popup .min{width:370px;height:auto;padding:10px;}
+
+.tc_login{width:336px;height:380px;background:transparent;}
+.tc_login .left{width:200px;height:380px;background-color:;float:left;}
+.tc_login .right{
+    width:290px;height:380px;background-color:;float:right;padding-right:10px;
+    padding-top:30px;
+}
+.tc_login .left h4{width:200px;height:20px;margin:20px 0 20px 0;font-size:15px;color:#666;text-align:center;}
+.tc_login .left img{width:150px;margin:0 auto;display:block;border:1px solid #E3E3E3;padding:4px;}
+.tc_login .left dd{width:200px;height:30px;font:13px/18px 'microsoft yahei';color:#666;margin:20px 0 10px 0;text-align:center;display:block;}
+
+.tc_login .right i{font-size:20px;color:#090;float:right;margin:15px 0 0px 0;}
+.tc_login .right a{font:13px/18px 'microsoft yahei';color:#666;float:right;margin:16px 0 0px 6px;}
+.tc_login .right a:hover{color:#06F;text-decoration: underline;}
+.tc_login .right input{
+    border: 3px solid #bac1de;
+    border-radius: 2px;
+    color: #000;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+    height: 40px;
+    padding:0 0 0 20px;
+	margin:10px 0px 10px 10px;
+    transition: background 0.3s ease-in-out;
+    width: 225px;
+	float:left;
+    background-color: #eee;
+}
+.tc_login .right input:focus {
+    outline: none;
+    border-color: #d6c3c3;
+    box-shadow: 0 0 0px #d6c3c3;
+}
+.tc_login .right .button{
+-webkit-appearance: none;
+    background:#7994b1;
+    border: solid:;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    height: 50px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2em;
+    letter-spacing: 0.05em;
+    text-align: center;
+    text-transform: uppercase;
+    transition: background 0.3s ease-in-out;
+    width: 220px;
+	padding:0 50px 0 50px;
+	font-weight: bold;
+    margin-top:35px;
+	}
+.tc_login .right .button:hover {
+
+    background: #ccb3d2;
+}
+.tc_login .right dd{width:100%;height:30px;}
+.tc_login .right dd a{font:18px/20px 'microsoft yahei';color:#6c2888;}
+.tc_login .right dd a:hover{font:18px/20px 'microsoft yahei';color:#06F;text-decoration: underline;}
+.tc_login .right hr{height:1px;border:none;border-top:1px dashed #E4E4E4;clear:both;margin:240px 0 5px 0px;}
+
+.onShow,.onFocus,.onError,.onCorrect,.onLoad{
+    background:url(../../images/reg_bg.png) no-repeat 3000px 3000px;
+    font-size: 12px; height:25px; 
+    width:170px; display:inline-block; line-height:25px; 
+    vertical-align:middle; overflow:hidden;
+    margin-right: 80px;
+}
+.onShow{background-position:0px -30px; color:#333}
+.onFocus{background-position:0px -30px; color:#333}
+.onError{background-position:0px -60px; color:#333}
+.onCorrect{background-position:0px 0; color:#333}
+.onLoad{background-position:0px 0}

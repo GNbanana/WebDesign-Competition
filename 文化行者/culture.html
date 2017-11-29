@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-Type" content="text/html; charset=utf-8" />
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"> <!--适应IE浏览器-->
+	<meta name="viewport" content="width=device-width, user-scalable=yes"><!--自适应网页-->
+	<meta name="keywords" content="支教，非遗，文化，儿童，少数民族">
+
+	<title>文化·教育</title>
+	<link href="images/bitbug_favicon.ico" rel="shortcut icon">
+
+    <!--styles-->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/owl.carousel.css" rel="stylesheet">
+    <link href="css/magnific-popup.css" rel="stylesheet">
+
+    <link href="css/humanity2.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/alpha.css">
+
+    <link type="text/css" rel="stylesheet" href="css/reset_1.css" />
+    <link type="text/css" rel="stylesheet" href="css/style_1.css" />
+
+
+	<link type="text/css" rel="stylesheet" href="css/translator.css" />
+	<link type="text/css" rel="stylesheet" href="css/style_pc.css"  media="all"/>
+	<link type="text/css" rel="stylesheet" href="css/style_sp.css" media="screen and (max-width: 768px)"/>
+
+	<link type="text/css" rel="stylesheet" href="css/bootstrap.css" media="all"/>
+	<link type="text/css" rel="stylesheet" href="css/style_2.css" media="all"/>
+	<link type="text/css" rel="stylesheet" href="css/flexslider.css" media="screen"/><!-- flexslider-CSS -->
+	<link type="text/css" rel="stylesheet" href="css/swipebox.css"/>
+
+	<!--time-->
+	<link rel="stylesheet" type="text/css" href="css/default_t.css">
+	<link rel="stylesheet" href="css/style_t.css"> <!-- Resource style -->
+
+	<link href="css/login/normalize.css" rel="stylesheet">
+	<link href="css/login/style.css" rel="stylesheet">
+
+	<link rel="stylesheet" href="css/weather.css">
+	<link rel="stylesheet" href="css/animate.css">
+
+	<script src="js/modernizr_t.js"></script> <!-- Modernizr -->
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery_slide.js"></script>
+
+	<script type="application/x-javascript">
+        addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+        function hideURLbar(){ window.scrollTo(0,1); }
+	</script>
+
+
+</head>
+
+
+
+<body>
+
+<!--HEADER -->
+<div class="header">
+  <div class="menu-wrap">
+	<nav class="menu">
+	  <div class="menu-list">
+		<a  id="login_id"  href="javascript:;" target="_blank">
+		  <span>登录•注册</span>
+		</a>
+		<a  id="welcome_id" target="_blank">
+		  <span id="welcome"></span>
+		</a>
+		<a  id="logout_id" href="javascript:;" target="_blank">
+		  <span>退出登录</span>
+		</a>
+		<a  href="index.html" target="_blank">
+		  <span>首页</span>
+		</a>
+		<a id="humanity_id" href="humanity.html" target="_blank">
+		  <span>非遗•人文</span>
+		</a>
+		<a id="culture_id" href="culture.html" class="active" target="_blank">
+		  <span>文化•教育</span>
+		</a>
+		<a id="walker_id" href="walker.html" target="_blank">
+		  <span>行者•之道</span>
+		</a>
+
+	  </div>
+	</nav>
+	<button class="close-button" id="close-button">Close Menu</button>
+  </div>
+  <button class="menu-button" id="open-button">
+	<!--<span></span>-->
+	<!--<span></span>-->
+	<!--<span></span>-->
+	  <img src="images/nav_title.png" alt="">
+  </button><!--/.for-sticky-->
+</div>
+
+
+<!--登陆注册-->
+
+<!--LOGIN -->
+<div id="gray-login"></div>
+<div class="popup" id="popup-login">
+	<div class="top_nav" id='top_nav_login'>
+		<div align="center">
+			<span>登录账号</span>
+			<a class="guanbi" id="close-login"></a>
+		</div>
+	</div>
+	<div class="min">
+		<div class="tc_login"> 
+			<div class="right">
+				<form name="login_form" id="login_form" target="_top">
+					<div align="center">
+						<i class="icon-mobile-phone"></i>
+						<input type="text" name="user_name" id="user_name" required="required" placeholder="用户名" autocomplete="off" class="input_yh">
+						<input type="password" name="user_password" id="user_password" required="required" placeholder="密码" autocomplete="off" class="input_mm">
+					</div>
+					<div align="center">
+						<input class="button" title="Sign In" id="login_bt" value="登录">
+					</div>
+				</form>   
+				<dd>
+					<div align="center" id="register-btn" target="_blank"><a href="javascript:;">立即注册</a></div>
+				</dd>
+				<hr align="center" />
+			</div>		
+		</div>
+	</div>
+</div>
+<!-- LOGIN END -->
+
+<!--Register -->
+<div id="gray-login"></div>
+<div class="popup" id="popup-register">
+	<div class="top_nav" id='top_nav_register'>
+		<div align="center">
+			<span>注册账号</span>
+			<a class="guanbi" id="close-register"></a>
+		</div>
+	</div>
+	<div class="min">
+		<div class="tc_login"> 
+			<div class="right" style="margin-top:-15px;">
+				<form name="register_form" id="register_form" target="_top">
+				  <!--  <input type="hidden" id="register" name="register" value="<%=register%>" />-->
+					<div align="center">
+						<input class="input_yh" required="required" name="t_UserName" id="t_UserName" placeholder="用户名" onblur="checkusername(this.value);" type="text" /><span id="t_UserNameTip" class="onShow"></span>
+
+						<input  class="input_mm" required="required" placeholder="密码" onblur="return checkpasswd(this);" id="t_UserPass" name="t_UserPass" type="password"/><span id="t_UserPassTip" class="onShow"></span>
+
+                		<input class="input_mm" required="required" placeholder="再次输入密码" onblur="checkdoublepassword();" class="reg_input" type="password" id="t_RePass" name="t_RePass"/><span id="t_RePassTip" class="onShow"></span>
+                   </div>
+					<div align="center">
+						<input class="button" title="Register" id="register_bt" value="免费注册">
+					</div>
+				</form>   
+			</div>		
+		</div>
+	</div>
+</div>
+<!-- Register END -->
+<!--登录注册-->
+
+<div id="tophead">
+	<div id="wrapper"><!--加在这里保证课程名框的完整显示-->
+		<div class="headpic htmleaf-content" style="height:750px;text-align:center;" >
+			<div class="weather snow">
+			    <img src="images\title5.jpg" alt="METAMORPHOSE" style="width: 100%;height:100%;" >
+
+			</div>
+		</div>
+
+        <div class="content-wrap" id="top" style="padding-bottom: 50px;">
+			<!--CONTENT-->
+            <div class="content">
+	  <!-- 页面内导航 -->
+	  <section class="nav_div" style="margin-top:-8%;">
+		  <div class="paging_nav">
+			  <nav>
+				  <ul class="paging_list">
+					  <li><p id="little_class" >小小课堂</p></li>
+					  <li><p id="dream_house">梦想工坊</p></li>
+					  <li><p id="life_guide">生活手册</p></li>
+				  </ul>
+			  </nav>
+		  </div>
+	  </section>
+	  </div>
+	    </div>
+
+		<div style="height:30px;"></div>
+		<div style="height:200px;text-align: center;">
+			<img class="aniview" av-animation="bounceInDown" src="images\logo1.png" alt=" " style="height:100%;width:23%;margin: 0 auto;"  />
+		</div>
+
+		<div style="height:30px;"></div>
+
+		<div class="comingsoon" style="height:180px;text-align:center">
+			<img class="comingsoon-text aniview" av-animation="bounceInDown" src="images\xxkt.png" alt="METAMORPHOSE" style="height:80%;width:60%;">
+		</div>
+
+
+		<div style="height:60px;"></div>
+
+        <!--  wrapper-->
+		<div id="container" class="aniview" av-animation="bounceInLeft">
+		    <div id="topContents">
+
+            <!--小小课堂-->
+				<section id="newEntry"><!--4图+更多课程部分-->
+					<div class="post">
+						<div class="img">
+							<a href="javascript:void">
+								<img src="images\class1.png"
+									 class="attachment-large size-large wp-post-image"
+									 alt=""
+									 srcset="images\class1.png 1024w, images\class1.png 300w, images\class1.png 768w"
+									 sizes="(max-width: 1024px) 100vw, 1024px" width="1024" height="529">
+							</a>
+						</div>
+						<div class="category">
+							<ul class="post-categories">
+								<a href="javascript:void" rel="category tag">❤ 手工课</a>
+							</ul>
+						</div>
+						<dl class="txt">
+							<dt>贵州省黎平县肇兴中心小学  多媒体教室</dt>
+							<dd class="series">毛毛  四川大学  2015级  水利水电学院</dd>
+							<dd class="description">
+								<p>课程目标：开发想象力</p>
+								<p>课程内容：毛毛老师为大家讲解了中外建筑历史，带领小朋友们用太空泥捏造心中的建筑。</p>
+								<p>课程效果：小朋友们兴致盎然，想象力丰富，捏出了一个个精致可爱的作品。</p>
+							</dd>
+							<dd class="info">
+								<div class="date">2017.07.26</div>
+								<ul class="tag">
+									<li><a href="javascript:void" rel="tag">别有侗天</a></li>
+									<li><a href="javascript:void" rel="tag">美术课</a></li>
+									<li><a href="javascript:void" rel="tag">毛老师</a></li>
+								</ul>
+							</dd>
+						</dl>
+					</div>
+					<div class="post">
+						<div class="img">
+							<a href="javascript:void">
+								<img src=images\class2.png"
+									 class="attachment-large size-large wp-post-image"
+									 alt=""
+									 srcset="images\class2.png 1024w, images\class2.png 300w, images\class2.png 768w"
+									 sizes="(max-width: 1024px) 100vw, 1024px" width="1024" height="529">
+							</a>
+						</div>
+						<div class="category">
+							<ul class="post-categories">
+								<a href="javascript:void" rel="category tag">❤ 手绘地图</a>
+							</ul>
+						</div>
+						<dl class="txt">
+							<dt>贵州省黎平县肇兴中心小学  多媒体教室</dt>
+							<dd class="series">蒋思毅  四川大学  2016级  公共管理学院</dd>
+							<dd class="description">
+								<p>课程目标：了解中国地形分布</p>
+								<p>课程内容：蒋思毅老师临摹了中国地图，带领小朋友们绘制文化地图。</p>
+								<p>课程效果：小朋友们在各省填充“文化特产”，安徽黄山、四川火锅、西藏布达拉宫……</p>
+							</dd>
+							<dd class="info">
+								<div class="date">2017.07.28</div>
+								<ul class="tag">
+									<li><a href="javascript:void" rel="tag">别有侗天</a></li>
+									<li><a href="javascript:void" rel="tag">美术课</a></li>
+									<li><a href="javascript:void" rel="tag">小毅哥哥</a></li>
+								</ul>
+							</dd>
+						</dl>
+					</div>
+					<div class="post">
+						<div class="img">
+							<a href="javascript:void">
+								<img src="images\class3.png"
+									 class="attachment-large size-large wp-post-image"
+									 alt=""
+									 srcset="images\class3.png 1024w, images\class3.png 300w, images\class3.png 768w"
+									 sizes="(max-width: 1024px) 100vw, 1024px" width="1024" height="529">
+							</a>
+						</div>
+						<div class="category">
+							<ul class="post-categories">
+								<a href="javascript:void" rel="category tag">❤ 民族服饰</a>
+							</ul>
+						</div>
+						<dl class="txt">
+							<dt>贵州省黎平县肇兴中心小学  运动场</dt>
+							<dd class="series">汪梦妍  四川大学  2015级  经济学院</dd>
+							<dd class="description">
+								<p>课程目标：普及民族服饰文化</p>
+								<p>课程内容：汪梦妍老师为小朋友们介绍各民族服饰文化，并邀请小朋友们演示盘发。</p>
+								<p>课程效果：小朋友们穿着自己的侗族服饰来上课，积极参与课堂分享。</p>
+							</dd>
+							<dd class="info">
+								<div class="date">2017.07.29</div>
+								<ul class="tag">
+									<li><a href="javascript:void" rel="tag">别有侗天</a></li>
+									<li><a href="javascript:void" rel="tag">民族文化课</a></li>
+									<li><a href="javascript:void" rel="tag">梦妍姐姐</a></li>
+								</ul>
+							</dd>
+						</dl>
+					</div>
+					<div class="post">
+						<div class="img">
+							<a href="javascript:void">
+								<img src="images\class4.png"
+									 class="attachment-large size-large wp-post-image"
+									 alt=""
+									 srcset="images\class4.png 1024w, images\class4.png 300w, images\class4.png 768w"
+									 sizes="(max-width: 1024px) 100vw, 1024px" width="1024" height="529">
+							</a>
+						</div>
+						<div class="category">
+							<ul class="post-categories">
+								<a href="javascript:void" rel="category tag">❤ 体育课</a>
+							</ul>
+						</div>
+						<dl class="txt">
+							<dt>贵州省黎平县肇兴中心小学  运动场</dt>
+							<dd class="series">卢虹学  四川大学  2015级  计算机学院</dd>
+							<dd class="description">
+								<p>课程目标：强身健体，增进了解。</p>
+								<p>课程内容：志愿者老师们带领小朋友们打篮球、打乒乓球、跳绳。</p>
+								<p>课程效果：小朋友们积极参与体育活动，志愿者老师们维持秩序，操场一片欢声笑语。</p>
+							</dd>
+							<dd class="info">
+								<div class="date">2017.08.04</div>
+								<ul class="tag">
+									<li><a href="javascript:void" rel="tag">别有侗天</a></li>
+									<li><a href="javascript:void" rel="tag">体育课</a></li>
+									<li><a href="javascript:void" rel="tag">小卢哥哥</a></li>
+								</ul>
+							</dd>
+						</dl>
+					</div>
+
+				</section>
+		    </div>
+	    </div>
+
+		<div class="container_image aniview" av-animation="bounceInRight">
+			<a href="javascript:void(0)" tip="0" class="i_btn prev_L"></a>
+			<a href="javascript:void(0)" tip="1" class="i_btn next_R"></a>
+
+			<ul class="slide_img"><!--图片库-->
+				<li class="on">
+					<a href="javascript:void(0);">
+						<img src="images\class6.png" />
+					</a>
+					<div class="icon"></div>
+					<div class="bg"></div>
+					<div class="info">
+						<span>手绘地图课</span>
+						<p>认真画画的小朋友。</p>
+					</div>
+				</li>
+				<li>
+					<a href="javascript:void(0)">
+						<img src="images\class7.png" />
+					</a>
+					<div class="icon"></div>
+					<div class="bg"></div>
+					<div class="info">
+						<span>篮球课</span>
+						<p><br>台阶上的篮球，操场边的小朋友。</p>
+					</div>
+				</li>
+				<li>
+					<a href="javascript:void(0)">
+						<img src="images\class8.png" />
+					</a>
+					<div class="icon"></div>
+					<div class="bg"></div>
+					<div class="info">
+						<i></i>
+						<span>第一次见面课</span>
+						<p><br>一起玩游戏，笑容灿烂的小朋友们。</p>
+					</div>
+				</li>
+				<li>
+					<a href="javascript:void(0)">
+						<img src="images\class9.png" />
+					</a>
+					<div class="icon"></div>
+					<div class="bg"></div>
+					<div class="info">
+						<i></i>
+						<span>民族服饰课</span>
+						<p><br>身着侗族传统服饰的两兄弟笑容腼腆。</p>
+					</div>
+				</li>
+				<li>
+					<a href="javascript:void(0)">
+						<img src="images\class10.png" />
+					</a>
+					<div class="icon"></div>
+					<div class="bg"></div>
+					<div class="info">
+						<i></i>
+						<span>民族服饰课</span>
+						<p><br>小朋友们热情地同相机后的志愿者老师问好。</p>
+					</div>
+				</li>
+				<li>
+					<a href="javascript:void(0)">
+						<img src="images\class11.png" />
+					</a>
+					<div class="icon"></div>
+					<div class="bg"></div>
+					<div class="info">
+						<i></i>
+						<span>汇报演出</span>
+						<p><br>小毅哥哥的一曲小提琴引得小朋友们掌声连连。</p>
+					</div>
+				</li>
+				<li>
+					<a href="javascript:void(0)">
+						<img src="images\class12.png" />
+					</a>
+					<div class="icon"></div>
+					<div class="bg"></div>
+					<div class="info">
+						<i></i>
+						<span>课间</span>
+						<p><br>离开前，小朋友们拍照留念。</p>
+					</div>
+				</li>
+			</ul>
+		</div>
+
+    </div>
+</div>
+
+
+	<div class="line1" style="height:100px;"></div>
+
+
+	<!--梦想工坊-->
+	<div style="height: 50px;"></div>
+
+	<div style="height:200px;text-align: center;" >
+		<img class="aniview" av-animation="bounceInDown" src="images\logo2.png" alt=" " style="height:100%;width:18%;margin: 0 auto;"  />
+	</div>
+	<div style="height:30px;"></div>
+
+	<div class="comingsoon" style="height:180px;text-align:center"><!--左动画-->
+		<img src="images\mxgf.png" alt="METAMORPHOSE" class="comingsoon-text aniview" av-animation="bounceInDown"  style="height:80%;width:60%;">
+	</div>
+
+	<div style="height: 50px;"></div>
+
+	<div id="services" class="services aniview" av-animation="bounceInLeft">
+		<div class="services-grids">
+			<div class="col-md-3 col-xs-3 serv-agileinfo view view-ninth">
+				<img src="images\art1.jpg" class="img-responsive" alt=""/>
+				<div class="mask mask-1"></div>
+				<div class="mask mask-2"></div>
+				<div class="content">
+					<h5>by小南瓜</h5>
+					<p>一天=春夏秋冬的小姑娘。</p>
+				</div>
+			</div>
+			<div class="col-md-3 col-xs-3 serv-agileinfo serv-w3text">
+				<h3>太空泥</h3>
+				<br>
+				<p>“我想住在这样的房子里！蓝色的南瓜小屋，彩虹色的铅笔塔……”</p>
+			</div>
+
+			<div class="col-md-3 col-xs-3 serv-agileinfo view view-ninth agileits-w3layouts">
+				<img src="images\art2.jpg" class="img-responsive" alt=""/>
+				<div class="mask mask-1"></div>
+				<div class="mask mask-2"></div>
+				<div class="content">
+					<h5>by童乐纳西全体</h5>
+					<p>大家一起盖房子。</p>
+				</div>
+			</div>
+			<div class="col-md-3 col-xs-3 serv-agileinfo serv-w3text">
+				<h3>竹房子</h3>
+				<br>
+				<p>把竹子磨成一根根小木棒，<br>大家一起盖房子。</p>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+		<div class="services-grids agileits-w3layouts">
+			<div class="col-md-3 col-xs-3 serv-agileinfo serv-w3text">
+				<h3>心愿树</h3>
+				<br>
+				<p>小朋友们手绘的心愿树，<br>绿色是生命的颜色。</p>
+			</div>
+			<div class="col-md-3 col-xs-3 serv-agileinfo view view-ninth">
+				<img src="images\art3.jpg" class="img-responsive" alt=""/>
+				<div class="mask mask-1"></div>
+				<div class="mask mask-2"></div>
+				<div class="content">
+					<h5>by小朋友</h5>
+					<p>小小心愿树。</p>
+				</div>
+			</div>
+			<div class="col-md-3 col-xs-3 serv-agileinfo serv-w3text">
+				<h3>纸衣服</h3>
+				<br>
+				<p>小小服装师，花瓣是锦缎，草木是棉布，春风是剪刀。</p>
+			</div>
+			<div class="col-md-3 col-xs-3 serv-agileinfo view view-ninth">
+				<img src="images\zhiyifu.png" class="img-responsive" alt=""/>
+				<div class="mask mask-1"></div>
+				<div class="mask mask-2"></div>
+				<div class="content">
+					<h5>by小朋友</h5>
+					<p>小朋友眼里最美的衣服。</p>
+				</div>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+
+
+
+	  <div style="height:50px;"></div>
+	  <div style="height:200px;text-align: center;">
+		<img class="aniview" av-animation="bounceInDown" src="images\logo3.png" alt=" " style="height:100%;width:16%;margin: 0 auto;"  />
+	  </div>
+	  <div style="height:30px;"></div>
+
+	  <div class="comingsoon" style="height:180px;text-align:center">
+		<img src="images\shsc.png" alt="METAMORPHOSE" class="comingsoon-text aniview" av-animation="bounceInDown" style="height:80%;width:60%;">
+	</div>
+
+      <!--time line-->
+      <section id="dream" class="cd-horizontal-timeline">
+	<div class="timeline aniview" av-animation="bounceInRight">
+		<div class="events-wrapper">
+			<div class="events">
+				<ol>
+					<li><a href="#0" data-date="28/04/2017" class="selected">28 Apr</a></li>
+					<li><a href="#0" data-date="01/05/2017">1 May</a></li>
+					<li><a href="#0" data-date="10/05/2017">10 May</a></li>
+					<li><a href="#0" data-date="28/05/2017">16 Jul</a></li>
+					<li><a href="#0" data-date="16/06/2017">22 Jul</a></li>
+					<li><a href="#0" data-date="18/06/2017">23 Jul</a></li>
+					<li><a href="#0" data-date="05/07/2017">25 Jul</a></li>
+					<li><a href="#0" data-date="08/07/2017">27 Jul</a></li>
+					<li><a href="#0" data-date="12/07/2017">28 Jul</a></li>
+					<li><a href="#0" data-date="02/08/2017">30 Jul</a></li>
+					<li><a href="#0" data-date="05/08/2017">2 Aug</a></li>
+				</ol>
+
+				<span class="filling-line" aria-hidden="true"></span>
+			</div> <!-- .events -->
+		</div> <!-- .events-wrapper -->
+
+		<ul class="cd-timeline-navigation">
+			<li><a href="#0" class="prev inactive">Prev</a></li>
+			<li><a href="#0" class="next">Next</a></li>
+		</ul> <!-- .cd-timeline-navigation -->
+	</div> <!-- .timeline -->
+
+	<div class="events-content aniview" av-animation="bounceInRight">
+		<ol>
+			<li class="selected" data-date="28/04/2017">
+				<h3>招募完成</h3>
+				<em>2017年 4月 28日</em>
+				<p>
+					<br>别有侗天、童乐纳西暑期支教小分队正式成立。
+				</p>
+				<div style="height: 20px;"></div>
+				<div style="text-align: center;width:500px;height: 272px;">
+					<a href="images\image1.jpg" target="_blank" >
+						<img src="images\image1.jpg" style="width:100%;height:100%;">
+					</a>
+				</div>
+			</li>
+
+			<li data-date="01/05/2017">
+				<h3>调研踩点</h3>
+				<em>2017年 5月 1日</em>
+				<p>
+					<br>暑期支教小分队利用五一假期，去当地调研踩点。<em>（了解更多？点击图片扫码有惊喜！）</em>
+				</p>
+				<div style="height: 20px;"></div>
+				<div style="text-align: center;width:500px;height: 272px;">
+					<a href="images\fj.jpg" target="_blank" >
+					<img src="images\image2.jpg" style="width:100%;height:100%;">
+					</a>
+				</div>
+
+			</li>
+
+			<li data-date="10/05/2017">
+				<h3>课程培训</h3>
+				<em>2017年 5月 10日</em>
+				<p>
+					<br>别有侗天小分队第一次例会，进行教案设计培训。
+				</p>
+				<div style="height: 20px;"></div>
+				<div style="text-align: center;width:500px;height: 272px;">
+					<a href="images\image3.jpg" target="_blank" >
+						<img src="images\image3.jpg" style="width:100%;height:100%;">
+					</a>
+				</div>
+			</li>
+
+			<li data-date="28/05/2017">
+				<h3>出发——泸沽湖</h3>
+				<em>2017年 7月 16日</em>
+				<p>
+					<br>童乐纳西小分队，因为国际周和大一队员军训的缘故，分两批先后前往泸沽湖。
+				</p>
+				<div style="height: 20px;"></div>
+				<div style="text-align: center;width:500px;height: 272px;">
+					<a href="images\image4.jpg" target="_blank" >
+						<img src="images\image4.jpg" style="width:100%;height:100%;">
+					</a>
+				</div>
+			</li>
+
+			<li data-date="16/06/2017">
+				<h3>出发——肇兴侗寨</h3>
+				<em>2017年 7月 16日</em>
+				<p>
+					别有侗天小分队出发，乘坐16小时绿皮车,抵达贵州肇兴。<em>（图片来源于“大北”微博）</em>
+				</p>
+				<div style="height: 20px;"></div>
+				<div style="text-align: center;width:500px;height: 272px;">
+					<a href="images\image5.jpg" target="_blank" >
+					<img src="images\image5.jpg" style="width:100%;height:100%;">
+					</a>
+
+				</div>
+			</li>
+
+			<li data-date="18/06/2017">
+				<h3>当地调研（一）</h3>
+				<em>2017年 7月 23日</em>
+				<p>
+					童乐纳西小分队在当地调研。
+				</p>
+				<div style="height: 20px;"></div>
+				<div style="text-align: center;width:500px;height: 272px;">
+					<a href="images\image6.jpg" target="_blank" >
+						<img src="images\image6.jpg" style="width:100%;height:100%;">
+					</a>
+
+				</div>
+			</li>
+
+			<li data-date="05/07/2017">
+				<h3>当地调研（二）</h3>
+				<em>2017年 7月 25日</em>
+				<p>
+					别有侗天小分队在当地调研，图为十字街。
+				</p>
+				<div style="height: 20px;"></div>
+				<div style="text-align: center;width:500px;height: 272px;">
+					<a href="images\image7.jpg" target="_blank" >
+						<img src="images\image7.jpg" style="width:100%;height:100%;">
+					</a>
+				</div>
+			</li>
+
+			<li data-date="08/07/2017">
+				<h3>当地调研（三）</h3>
+				<em>2017年 7月 28日</em>
+				<p>
+					<br>童乐纳西小分队爬山调研采蘑菇，从六十度倾角的山坡上成功着陆。
+				</p>
+				<div style="height: 20px;"></div>
+				<div style="text-align: center;width:500px;height: 272px;">
+					<a href="images\image8.jpg" target="_blank" >
+						<img src="images\image8.jpg" style="width:100%;height:100%;">
+					</a>
+				</div>
+			</li>
+
+			<li data-date="12/07/2017">
+				<h3>堂安梯田</h3>
+				<em>2017年 7月 30日</em>
+				<p>
+					别有侗天小分队5:30晨起去堂安梯田调研。
+				</p>
+				<div style="height: 20px;"></div>
+				<div style="text-align: center;width:500px;height: 272px;">
+					<a href="images\image9.jpg" target="_blank" >
+						<img src="images\image9.jpg" style="width:100%;height:100%;">
+					</a>
+				</div>
+
+			</li>
+
+			<li data-date="02/08/2017">
+				<h3>文艺汇演</h3>
+				<em>2017年 7月 30日</em>
+				<p>
+					童乐纳西小分队举行文艺汇演，小朋友们跳锅庄舞。
+				</p>
+				<div style="height: 20px;"></div>
+				<div style="text-align: center;width:500px;height: 272px;">
+					<a href="images\image10.jpg" target="_blank" >
+						<img src="images\image10.jpg" style="width:100%;height:100%;">
+					</a>
+				</div>
+			</li>
+
+			<li data-date="05/08/2017">
+				<h3>炊事班外传</h3>
+				<em>2017年 8月 2日</em>
+				<p>
+					从劈柴到生火，别有侗天炊事班厨艺日益精湛。<em>（了解更多？点击图片扫码有惊喜！）</em>
+				</p>
+				<div style="height: 20px;"></div>
+				<div style="text-align: center;width:500px;height: 272px;">
+					<a href="images\csb.jpg" target="_blank" >
+						<img src="images\image11.jpg" style="width:100%;height:100%;">
+					</a>
+				</div>
+			</li>
+		</ol>
+	</div>
+</section>
+
+      <!--FOOTER-->
+<footer>
+	<div class="footer_link">
+		<div class="footer_left">
+			<h2>文化行者，我们在路上</h2>
+			<ul>
+				<li>友情链接： </li>
+				<li><a href="http://page.renren.com/601463454?checked=true">人人网</a></li>
+				<li><a href="http://culkorchengdu.blog.163.com/">博客</a></li>
+				<li><a href="https://baike.baidu.com/item/%E5%9B%9B%E5%B7%9D%E5%A4%A7%E5%AD%A6%E6%96%87%E5%8C%96%E8%A1%8C%E8%80%85%E5%9B%A2%E9%98%9F/19899404?fr=aladdin&fromid=19212644&fromtitle=%E5%9B%9B%E5%B7%9D%E5%A4%A7%E5%AD%A6%E6%96%87%E5%8C%96%E8%A1%8C%E8%80%85">百度百科</a></li>
+			</ul>
+		</div>
+		<div class="footer_right">
+			<div>
+				<img src="images/weibo.png" alt="">
+				<p>微博</p>
+			</div>
+			<div>
+				<img src="images/weixin.jpg" alt="">
+				<p>微信</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="footer-top">
+		<ul class="socials">
+			<li class="twitter">
+				<a href="#" data-hover="文化行者，我们在路上。">文化行者，我们在路上</a>
+			</li>
+		</ul>
+	</div>
+</footer>
+
+      <!--return top-->
+      <div class="returnTop"><span id="returnTop">＜</span></div>
+
+<script src="js/jquery-1.9.1.min.js" type="text/javascript"></script>
+<script src="js/main_t.js"></script>
+
+<script src="js/hum_modernizr.custom.js"></script>
+<script src="js/humanity.js" type="text/javascript"></script>
+
+<script src="js/bootstrap.min.js" type="text/javascript"></script>
+<script src="js/classie.js" type="text/javascript"></script>
+<script src="js/owl.carousel.min.js" type="text/javascript"></script>
+<script src="js/jquery.magnific-popup.min.js" type="text/javascript"></script>
+<script src="js/smooth-scroll.min.js" type="text/javascript"></script>
+<script src="js/typed.js" type="text/javascript"></script>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquerypp.custom.js"></script>
+<script src="js/jquery.bookblock.js"></script>
+<script src="js/jquery.aniview.min.js"></script>
+
+<script>
+	var options = {
+		animateThreshold: 100,
+		scrollPollInterval: 50
+	}
+
+	$('.aniview').AniView(options);
+</script>
+
+<!-- Register -->
+<script src="js/register/formValidator_min.js" type="text/javascript" charset="UTF-8"></script>
+<script src="js/register/jquery-1.2.6.min.js" type=text/javascript></script>
+<script src="js/register/formValidatorRegex.js" type="text/javascript" charset="UTF-8"></script>
+<!-- Register End -->
+<script type="text/javascript">
+	$(function(){
+
+		var newopt={
+			w2:"180",//小图宽度
+			h2:"490"//小图高度
+		};
+
+		i_slide($(".container_image"),newopt);
+
+	});
+</script>
+
+<script src="js/SmoothScroll.min.js"></script>
+
+<!-- start-smooth-scrolling -->
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$(".scroll").click(function(event){
+			event.preventDefault();
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+		});
+	});
+</script>
+
+
+<!-- Login -->
+<script type="text/javascript">
+   var jq110=$.noConflict(true);
+</script>
+
+<script src="js/login/login.js" type="text/javascript"></script>
+
+
+
+</body>
+</html>

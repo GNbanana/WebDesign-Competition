@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>文化行者-我们在路上</title>
+    <meta content="width=device-width,initial-scale=1" name="viewport">
+    <link href="images/bitbug_favicon.ico" rel="shortcut icon">
+
+    <link rel="stylesheet" href="css/index.css">
+
+    <script src="js/jquery.min.js" type="text/javascript"></script>
+    <script>
+        window.onload=function(){
+            $(".loading").fadeOut();
+        };
+
+        $(function(){
+            var window_width = $(window).width();
+            var window_height = $(window).height();
+            var loading =  $(".loading");
+
+            loading.height(window_height);
+            loading.width(window_width);
+        });
+
+    </script>
+</head>
+<body>
+
+<div class="loading">
+    <img src="images/loading.gif" alt="">
+</div>
+
+<div class="mask_img">
+    <div class="mask_left"><img src="images/index_left.jpg" alt=""></div>
+    <div class="mask_right"><img src="images/index_right.jpg" alt=""></div>
+    <div class="mask_middle"><img src="images/index_middle.png" alt=""></div>
+</div>
+<div class="bg_img">
+
+    <div class="bg_list">
+        <a class="bg_inside" href="humanity.html" target="_blank"><img src="images/inside_left.jpg" alt=""></a>
+        <a class="bg_outside" href="humanity.html" target="_blank"><img src="images/outside_left.jpg" alt=""></a>
+    </div>
+    <div class="bg_list">
+        <a class="bg_inside" href="culture.html"><img src="images/inside_middle.jpg" alt=""></a>
+        <a class="bg_outside" href="culture.html"><img src="images/outside_middle.jpg" alt=""></a>
+    </div>
+    <div class="bg_list">
+        <a class="bg_inside" href="walker.html" target="_blank"><img src="images/inside_right.jpg" alt=""></a>
+        <a class="bg_outside" href="walker.html" target="_blank"><img src="images/outside_right.jpg" alt=""></a>
+    </div>
+
+</div>
+
+
+<script src="js/index.js" type="text/javascript"></script>
+</body>
+</html>

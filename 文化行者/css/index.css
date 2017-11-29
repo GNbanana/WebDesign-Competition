@@ -1,0 +1,112 @@
+*, *:after, *:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body, html {
+    font-size: 100%;
+    padding: 0;
+    margin: 0;
+
+}
+
+
+.clearfix:before, .clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.loading {
+    background: #ffffff;
+    position:absolute;
+    z-index: 99999;
+}
+.loading img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 30px;
+    height: 30px;
+    margin-top: -15px;
+    margin-left: -15px;
+}
+
+.mask_img{
+    position: fixed;
+    z-index: 10;
+}
+
+.mask_left,
+.mask_right{
+    position: absolute;
+    width: 50%;
+    height: 100%;
+
+}
+
+.mask_left{
+    float: left;
+    left: 0;
+}
+
+.mask_right{
+    float: right;
+    right:0;
+}
+
+.mask_left img,
+.mask_right img{
+    width: 100%;
+    height: 100%;
+}
+
+.mask_middle{
+    position: fixed;
+    width: 30%;
+    left: 35%;
+    top:50%;
+}
+
+.mask_middle img{
+    width: 100%;
+    height: 100%;
+}
+
+.bg_img{
+    position: relative;
+    clear: both;
+}
+
+
+.bg_list{
+    position: relative;
+    float: left;
+    width: 33.33%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.bg_list a,
+.bg_list a img{
+    width: 100%;
+    height: 100%;
+}
+
+.bg_list a{
+    position: absolute;
+}
+
+.bg_outside{
+    top: 0;
+}
+
+@media screen and (max-width:700px){
+    .bg_list{
+        width: 100%;
+    }
+}

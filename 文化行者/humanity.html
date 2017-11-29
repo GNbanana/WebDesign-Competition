@@ -1,0 +1,616 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>非遗•人文</title>
+<meta content="IE=edge" http-equiv="X-UA-Compatible">
+<meta content="width=device-width, initial-scale=1" name="viewport">
+
+	<link href="images/bitbug_favicon.ico" rel="shortcut icon">
+
+    <!--styles-->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/owl.carousel.css" rel="stylesheet">
+    <link href="css/magnific-popup.css" rel="stylesheet">
+    <link href="css/humanity.css" rel="stylesheet">
+
+	<link rel="stylesheet" href="css/animate.css">
+	<link href="css/login/normalize.css" rel="stylesheet">
+     <link href="css/login/style.css" rel="stylesheet">
+
+	<script src="js/hum_modernizr.custom.js"></script>
+
+<!--[if lt IE 9]>
+   <script type="text/javascript" src="js/html5shiv.min.js"></script>
+<![endif]-->
+</head>
+<body>
+
+
+<!--HEADER -->
+<div class="header">
+  <div class="menu-wrap">
+	<nav class="menu">
+	  <div class="menu-list">
+		<a  id="login_id"  href="javascript:;" target="_blank">
+		  <span>登录•注册</span>
+		</a>
+		<a  id="welcome_id" target="_blank">
+		  <span id="welcome"></span>
+		</a>
+		<a  id="logout_id" href="javascript:;" target="_blank">
+		  <span>退出登录</span>
+		</a>
+		<a  href="index.html" target="_blank">
+		  <span>首页</span>
+		</a>
+		<a id="humanity_id" href="humanity.html" class="active" target="_blank">
+		  <span>非遗•人文</span>
+		</a>
+		<a id="culture_id" href="culture.html" target="_blank">
+		  <span>文化•教育</span>
+		</a>
+		<a id="walker_id" href="walker.html" target="_blank">
+		  <span>行者•之道</span>
+		</a>
+
+	  </div>
+	</nav>
+	<button class="close-button" id="close-button">Close Menu</button>
+  </div>
+  <button class="menu-button" id="open-button">
+	<!--<span></span>-->
+	<!--<span></span>-->
+	<!--<span></span>-->
+	  <img src="images/nav_title.png" alt="">
+  </button><!--/.for-sticky-->
+</div>
+
+
+<!--登陆注册-->
+
+<!--LOGIN -->
+<div id="gray-login"></div>
+<div class="popup" id="popup-login">
+	<div class="top_nav" id='top_nav_login'>
+		<div align="center">
+			<span>登录账号</span>
+			<a class="guanbi" id="close-login"></a>
+		</div>
+	</div>
+	<div class="min">
+		<div class="tc_login"> 
+			<div class="right">
+				<form name="login_form" id="login_form" target="_top">
+					<div align="center">
+						<i class="icon-mobile-phone"></i>
+						<input type="text" name="user_name" id="user_name" required="required" placeholder="用户名" autocomplete="off" class="input_yh">
+						<input type="password" name="user_password" id="user_password" required="required" placeholder="密码" autocomplete="off" class="input_mm">
+					</div>
+					<div align="center">
+						<input class="button" title="Sign In" id="login_bt" value="登录">
+					</div>
+				</form>   
+				<dd>
+					<div align="center" id="register-btn" target="_blank"><a href="javascript:;">立即注册</a></div>
+				</dd>
+				<hr align="center" />
+			</div>		
+		</div>
+	</div>
+</div>
+<!-- LOGIN END -->
+
+<!--Register -->
+<div id="gray-login"></div>
+<div class="popup" id="popup-register">
+	<div class="top_nav" id='top_nav_register'>
+		<div align="center">
+			<span>注册账号</span>
+			<a class="guanbi" id="close-register"></a>
+		</div>
+	</div>
+	<div class="min">
+		<div class="tc_login"> 
+			<div class="right" style="margin-top:-15px;">
+				<form name="register_form" id="register_form" target="_top">
+				  <!--  <input type="hidden" id="register" name="register" value="<%=register%>" />-->
+					<div align="center">
+						<input class="input_yh" required="required" name="t_UserName" id="t_UserName" placeholder="用户名" onblur="checkusername(this.value);" type="text" /><span id="t_UserNameTip" class="onShow"></span>
+
+						<input  class="input_mm" required="required" placeholder="密码" onblur="return checkpasswd(this);" id="t_UserPass" name="t_UserPass" type="password"/><span id="t_UserPassTip" class="onShow"></span>
+
+                		<input class="input_mm" required="required" placeholder="再次输入密码" onblur="checkdoublepassword();" class="reg_input" type="password" id="t_RePass" name="t_RePass"/><span id="t_RePassTip" class="onShow"></span>
+                   </div>
+					<div align="center">
+						<input class="button" title="Register" id="register_bt" value="免费注册">
+					</div>
+				</form>   
+			</div>		
+		</div>
+	</div>
+</div>
+<!-- Register END -->
+<!--登录注册-->
+
+<!--CONTENT WRAP-->
+<div class="content-wrap" id="top">
+  <!--CONTENT-->
+  <div class="content">
+	  <!--HOME-->
+	  <section id="home">
+		  <img src="images/main_title.png" alt="">
+	  </section>
+
+	  <!-- 页面内导航 -->
+	  <section class="nav_div">
+		  <div class="paging_nav">
+			  <nav>
+				  <ul class="paging_list">
+					  <li><p id="about_link" >古老建筑</p></li>
+					  <li><p id="employement_link">诗歌海洋</p></li>
+					  <li><p id="work_link">织锦绣梦</p></li>
+					  <li><p id="diet_link">饮食人家</p></li>
+				  </ul>
+			  </nav>
+		  </div>
+	  </section>
+
+	  <!--古老建筑-->
+	  <section class="oldBuilding" id="about">
+		  <div class="col-md-6 col-xs-12 no-pad">
+			  <div class="bg-about">
+				  <div>
+					  <h3 class="title-small">
+						  <!--<span>古老建筑</span>-->
+						  <img class="aniview" av-animation="bounceInDown"  src="images/gulaojianzhu_logo.png" alt="">
+					  </h3>
+					  <p class="content-detail aniview" av-animation="bounceInRight">
+						  &nbsp;&nbsp;&nbsp;&nbsp;村寨大都依山傍水，侗民聚族而居。在民族建筑上，以鼓楼、寨门、风雨桥最为出色，堪称侗族建筑“三宝”。“五里一井，十里一亭”，当你行走在侗乡山路上时，必有一座玲珑别致的凉亭供行人乘凉、歇息、躲风雨之用。<br/><br/>
+						  &nbsp;&nbsp;&nbsp;&nbsp;风雨桥是集桥、亭、廊为一体的侗族特色桥梁建筑。侗族建桥一般建在寨尾的水口处，侗族把水看成是游龙，所以龙从上游到桥边，回头守寨，有保护村寨人畜平安，人杰地灵之意思。这是世界四大桥建筑奇迹之一，也是侗族的“福桥”、“生命之桥”。
+
+					  </p>
+				  </div>
+			  </div>
+		  </div>
+		  <div class="col-md-6 col-sm-12 col-xs-12 white-col" >
+			  <div class="row">
+				  <!--OWL CAROUSEL2-->
+				  <div class="owl-carousel2" >
+					  <div class="col-md-12 col-sm-12 col-xs-12 white-col">
+						  <div class="row">
+							  <div class="col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-12">
+								  <div class="wrap-about" >
+									  <img src="images/building1.jpg" alt="">
+								  </div>
+							  </div>
+						  </div>
+					  </div>
+					  <div class="col-md-12 col-sm-12 col-xs-12 white-col">
+						  <div class="row">
+							  <div class="col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-12">
+								  <div class="wrap-about">
+									  <img src="images/building2.jpg" alt="">
+								  </div>
+							  </div>
+						  </div>
+					  </div>
+				  </div>
+				  <!--/.OWL CAROUSEL2 END-->
+			  </div>
+		  </div>
+	  </section>
+
+	  <!--诗歌海洋-->
+	  <section class="grey-bg" id="employement">
+		  <div class="container">
+			  <div class="row">
+				  <div class="col-md-3" id="poem">
+					  <h3 class="title-small">
+						  <!--<span>诗歌海洋</span>-->
+						  <img class="aniview" av-animation="bounceInDown" src="images/shigehaiyang_logo.png" alt="">
+					  </h3>
+					  <p class="content-detail aniview" av-animation="bounceInLeft" >
+						  <br/>
+						  &nbsp;&nbsp;&nbsp;&nbsp;侗族大歌无论是音律结构、演唱技艺、演唱方式和演唱场合均与一般民间歌曲不同，它是一领众和，分高低音多声部谐唱的合唱种类，属于民间支声复调音乐歌曲，这在中外民间音乐中都极为罕见，侗族大歌不仅仅是一种音乐艺术形式，对于侗族人民文化及其精神的传承和凝聚都起着非常重大的作用，是侗族文化的直接体现。
+					  </p>
+				  </div>
+				  <div class="col-md-9 content-right">
+					  <div class="row">
+						  <ul class="listing-item">
+							  <li>
+								  <div class="col-md-6 col-sm-6">
+									  <div class="wrap-card aniview" av-animation="bounceInRight">
+										  <div class="card" id="bugucuichun">
+											  <h2 class="year">
+												  《布谷催春》
+											  </h2>
+											  <div class="bgm_div">
+												  <audio id="backgroundMusic1" src="music/music1.mp3" autoplay="autoplay" loop="loop"></audio>
+												  <a id="backgroundMusic_btn1">
+													  <img src="images/music_off.png" id="music_btn1" border="0">
+												  </a>
+											  </div>
+											  <div class="text-detail">
+												  <p>
+													  春时好日子　<br/>
+													  高岭上的树叶闪闪发光<br/>
+													  布谷鸟放声歌唱啊　布谷布谷　<br/>
+													  河边的柳树重发新芽<br/>
+													  日子日增月长<br/>
+													  我们进入了忙时的季节<br/>
+													  还没到播种的季节　我们先约好<br/>
+													  从今往后<br/>
+													  我们上高山<br/>
+												  </p>
+											  </div>
+										  </div>
+									  </div>
+								  </div>
+							  </li>
+
+							  <li>
+								  <div class="col-md-6 col-sm-6">
+									  <div class="wrap-card aniview" av-animation="bounceInRight" >
+										  <div class="card" id="shangchongpipage">
+											  <h2 class="year">
+												  《尚重琵琶歌》
+											  </h2>
+											  <div class="bgm_div">
+												  <audio id="backgroundMusic2" src="music/music2.mp3" autoplay="autoplay" loop="loop"></audio>
+												  <a id="backgroundMusic_btn2">
+													  <img src="images/music_off.png" id="music_btn2" border="0">
+												  </a>
+											  </div>
+
+											  <div class="text-detail">
+												  <p>
+													  当初热恋我日夜苦相思<br/>
+													  却不知何时才能圆为夫妻<br/>
+													  多少个春夏秋冬<br/>
+													  回忆我们曾经往事　记忆犹新<br/>
+													  第一年等你不来<br/>
+													  我还满怀信心地相信<br/>
+													  第二年你一定会到来<br/>
+													  神魂颠倒　度日如年<br/>
+													  这样的日子何时是尽头
+
+												  </p>
+											  </div>
+										  </div>
+									  </div>
+								  </div>
+							  </li>
+						  </ul>
+					  </div>
+				  </div>
+			  </div>
+		  </div>
+	  </section>
+
+	  <!--织锦绣梦-->
+	  <section class="grey-bg mar-tm-50" id="work">
+	  <div class="container">
+		<div class="row">
+		  <div class="col-md-3">
+			<h3 class="title-small">
+			  <!--<span>织锦绣梦</span>-->
+				<img class="aniview" av-animation="bounceInDown" src="images/zhijinxiumeng_logo.png" alt="">
+			</h3>
+			<p class="content-detail aniview" av-animation="bounceInRight">
+				&nbsp;&nbsp;&nbsp;&nbsp;侗锦继承了古代百越民族的织造技艺，唐代《北史·僚传》便有“僚人能为细布，色致鲜净”的记载。侗锦以其纹样古老，工艺细腻精致，花纹胜于刺绣，精美无比而扬名于世。<br/>
+				&nbsp;&nbsp;&nbsp;&nbsp;党代会上的侗锦在设计上进行了创新，在花色、图案、款式中增加了现代元素。<br/>
+				&nbsp;&nbsp;&nbsp;&nbsp;彩锦常用红、绿、黄、紫、蓝诸色棉线织成，色彩缤纷，十分艳丽，图案多几何纹，中杂各色彩花、蝴蝶、鸟兽。<br/>
+				&nbsp;&nbsp;&nbsp;&nbsp;素锦多为黑白两色，以提经织法居多，也有用提经兼挑经配以少量的彩线，多用于被面及大件物品。
+			</p>
+		  </div>
+		  <div class="col-md-9 content-right aniview" av-animation="bounceInRight">
+			<!--PORTFOLIO IMAGE-->
+			<ul class="portfolio-image">
+			  <li class="col-md-6 aniview" av-animation="rotateInDownLeft">
+				<a href="images/bw-1.png"><img alt="image" src="images/bw-1.png">
+				  <div class="decription-wrap">
+					<div class="image-bg">
+					   <p class="desc">
+						   侗锦,以纹样古老，工艺细腻精致，花纹胜于刺绣，精美无比而扬名于世。
+					   </p>
+					</div>
+
+				  </div>
+				</a>
+			  </li>
+			  <li class="col-md-6 aniview" av-animation="rotateInDownLeft">
+				<a href="images/bw-2.png"><img alt="image" src="images/bw-2.png">
+				  <div class="decription-wrap">
+					<div class="image-bg">
+					  <p class="desc">
+						 侗锦在设计上进行了创新，在花色、图案、款式中增加了现代元素。
+					  </p>
+					</div>
+				  </div>
+				</a>
+			  </li>
+			  <li class="col-md-6 aniview" av-animation="rotateInDownLeft">
+				<a href="images/bw-3.png"><img alt="image" src="images/bw-3.png">
+				  <div class="decription-wrap">
+					<div class="image-bg">
+					  <p class="desc">
+						  彩锦色彩缤纷，十分艳丽，图案多几何纹，中杂各色彩花、蝴蝶、鸟兽。
+					  </p>
+					</div>
+				  </div>
+				</a>
+			  </li>
+			  <li class="col-md-6 aniview" av-animation="rotateInDownLeft">
+				<a href="images/bw-4.png"><img alt="image" src="images/bw-4.png">
+				  <div class="decription-wrap">
+					<div class="image-bg">
+					  <p class="desc">
+						  素锦多为黑白两色，以提经织法居多，也有用提经兼挑经配以少量的彩线。
+					  </p>
+					</div>
+				  </div>
+				</a>
+			  </li>
+			</ul>
+			<!--/.PORTFOLIO IMAGE END-->
+		  </div>
+		</div>
+	  </div>
+	</section>
+
+
+
+	  <!-- 饮食人家 -->
+	  <section id="diet">
+		  <div class="book_container">
+			  <div class="book_word">
+				  <h3 class="title-small">
+					  <!--<span>饮食人家</span>-->
+					  <img class="aniview" av-animation="bounceInDown" src="images/yinshirenjia_logo.png" alt="">
+				  </h3>
+				  <p class="content-detail aniview" av-animation="bounceInLeft">
+					  在通道，有这么一碗茶，芳香而可口。喝出的是侗家人的良善热情，侗家人的素朴纯真。<br/>
+					  香甜热糯的豆粉糍粑团，一大口咬下去，又酥又香又有味儿！<br/>
+					  农家自制的七彩泡椒，酸姜，味道清爽得勾人魂。<br/>
+					  由草鱼去鳞除刺后切成非常薄的鱼片，用生茶油腌制，然后用侗族传统腌制的酸菜汤腌制，配上酸菜、紫苏、鱼腥草、花生沫等香料，那叫一个色鲜味美。
+
+				  </p>
+			  </div>
+			  <div class="container">
+				  <div class="row">
+					  <div class="col-md-4 col-sm-6 aniview" av-animation="rotateInDownLeft">
+						  <div class="box">
+							  <img src="images/1.jpg" alt="">
+							  <div class="over-layer">
+								  <p class="description">侗族以大米为主食，肉食以家养的禽畜为主，尤喜食鱼类;蔬菜品种较多。妇女们经常上山采集野生竹笋、菌子、蕨菜等佐餐。男人们农闲时猎取野猪、竹鼠、山鸡、鸟雀等食用。</p>
+								  <ul class="social-links">
+									  <li><a href="#" class="fa fa-download"></a></li>
+									  <li><a href="#" class="fa fa-link"></a></li>
+									  <li><a href="#" class="fa fa-search"></a></li>
+								  </ul>
+							  </div>
+						  </div>
+					  </div>
+
+					  <div class="col-md-4 col-sm-6 aniview" av-animation="rotateInDownLeft">
+						  <div class="box">
+							  <img src="images/2.jpg" alt="">
+							  <div class="over-layer">
+								  <p class="description">酒在侗族饮食中有极重要的位置。侗家好客，以酒为礼，以酒为乐。糯米、油茶、腌酸和鱼是侗族人民最喜爱的传统食品，这类食品与民族习俗息息相关，被公认为是侗家风味。</p>
+								  <ul class="social-links">
+									  <li><a href="#" class="fa fa-download"></a></li>
+									  <li><a href="#" class="fa fa-link"></a></li>
+									  <li><a href="#" class="fa fa-search"></a></li>
+								  </ul>
+							  </div>
+						  </div>
+					  </div>
+
+					  <div class="col-md-4 col-sm-6 aniview" av-animation="rotateInDownLeft">
+						  <div class="box">
+							  <img src="images/3.jpg" alt="">
+							  <div class="over-layer">
+								  <p class="description">很多地方早餐吃油茶，而把午餐称为早饭。进餐时一般都摆低桌短凳，使用碗筷，合家围桌而食。有“牛瘪”、烧鱼、血浆鸭、红肉等特殊食品。以“油茶”、“酸宴”和“合拢饭”款待宾客。</p>
+								  <ul class="social-links">
+									  <li><a href="#" class="fa fa-download"></a></li>
+									  <li><a href="#" class="fa fa-link"></a></li>
+									  <li><a href="#" class="fa fa-search"></a></li>
+								  </ul>
+							  </div>
+						  </div>
+					  </div>
+				  </div>
+			  </div>
+
+			  <div class="book_detail">
+				  <p class="content-detail aniview" av-animation="bounceInRight">
+					  &nbsp;&nbsp;&nbsp;&nbsp;侗族一年中的各种节会活动不下百处（次），仅黔东南侗族地区一年之中就有各种节会活动84次。有全民族普遍过的节日，也有一村一寨、一族一姓的节日。
+					  春节、活路节、尝新节、三月三、林王节、牛神节、芦笙节、花炮节、大雾梁歌节、四十八寨歌节、斗牛节等节会最为隆重。
+					  节日的内容广泛，涉及时令、生产、祭祖、信仰、姓氏、英雄、爱情、娱乐、体育等。
+					  随着民族文化的交融，侗族还有清明、端午、中秋、重阳等汉族传统节日.
+				  </p>
+			  </div>
+
+			  <div class="bb-custom-wrapper aniview" av-animation="bounceInLeft">
+				  <div id="bb-bookblock" class="bb-bookblock">
+					  <div class="bb-item">
+						  <a><img src="images/book1.jpg" alt="image01"/></a>
+					  </div>
+					  <div class="bb-item">
+						  <a><img src="images/book2.jpg" alt="image02"/></a>
+					  </div>
+					  <div class="bb-item">
+						  <a><img src="images/book3.jpg" alt="image03"/></a>
+					  </div>
+					  <div class="bb-item">
+						  <a><img src="images/book4.jpg" alt="image04"/></a>
+					  </div>
+					  <div class="bb-item">
+						  <a><img src="images/book5.jpg" alt="image05"/></a>
+					  </div>
+				  </div>
+				  <nav>
+
+					  <a id="bb-nav-prev" href="#" ></a>
+					  <a id="bb-nav-next" href="#" ></a>
+
+				  </nav>
+			  </div>
+
+		  </div>
+	  </section>
+
+
+	  <!--FOOTER-->
+	  <footer>
+		  <div class="footer_link">
+			  <div class="footer_left">
+				  <h2>文化行者，我们在路上</h2>
+				  <ul>
+					  <li>友情链接： </li>
+					  <li><a href="http://page.renren.com/601463454?checked=true">人人网</a></li>
+					  <li><a href="http://culkorchengdu.blog.163.com/">博客</a></li>
+					  <li><a href="https://baike.baidu.com/item/%E5%9B%9B%E5%B7%9D%E5%A4%A7%E5%AD%A6%E6%96%87%E5%8C%96%E8%A1%8C%E8%80%85%E5%9B%A2%E9%98%9F/19899404?fr=aladdin&fromid=19212644&fromtitle=%E5%9B%9B%E5%B7%9D%E5%A4%A7%E5%AD%A6%E6%96%87%E5%8C%96%E8%A1%8C%E8%80%85">百度百科</a></li>
+				  </ul>
+			  </div>
+			  <div class="footer_right">
+				  <div>
+					  <img src="images/weibo.png" alt="">
+					  <p>微博</p>
+				  </div>
+				  <div>
+					  <img src="images/weixin.jpg" alt="">
+					  <p>微信</p>
+				  </div>
+			  </div>
+		  </div>
+
+		  <div class="footer-top">
+			  <ul class="socials">
+				  <li class="twitter">
+					  <a href="#" data-hover="文化行者，我们在路上。">文化行者，我们在路上</a>
+				  </li>
+			  </ul>
+		  </div>
+	  </footer>
+
+  </div>
+
+</div>
+
+<div class="returnTop"><span id="returnTop">＜</span></div>
+
+<script src="js/jquery-1.9.1.min.js" type="text/javascript"></script>
+<script src="js/bootstrap.min.js" type="text/javascript"></script>
+<script src="js/classie.js" type="text/javascript"></script>
+<script src="js/owl.carousel.min.js" type="text/javascript"></script>
+<script src="js/jquery.magnific-popup.min.js" type="text/javascript"></script>
+<script src="js/smooth-scroll.min.js" type="text/javascript"></script>
+<script src="js/typed.js" type="text/javascript"></script>
+<script src="js/humanity.js" type="text/javascript"></script>
+
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquerypp.custom.js"></script>
+<script src="js/jquery.bookblock.js"></script>
+<script src="js/jquery.aniview.min.js"></script>
+
+<script>
+	var options = {
+		animateThreshold: 100,
+		scrollPollInterval: 50
+	}
+	$('.aniview').AniView(options);
+</script>
+
+<script>
+
+	var Page = (function() {
+
+		var config = {
+					$bookBlock : $( '#bb-bookblock' ),
+					$navNext : $( '#bb-nav-next' ),
+					$navPrev : $( '#bb-nav-prev' ),
+
+				},
+				init = function() {
+					config.$bookBlock.bookblock( {
+						speed : 800,
+						shadowSides : 0.8,
+						shadowFlip : 0.7
+					} );
+					initEvents();
+				},
+				initEvents = function() {
+
+					var $slides = config.$bookBlock.children();
+
+					// add navigation events
+					config.$navNext.on( 'click touchstart', function() {
+						config.$bookBlock.bookblock( 'next' );
+						return false;
+					} );
+
+					config.$navPrev.on( 'click touchstart', function() {
+						config.$bookBlock.bookblock( 'prev' );
+						return false;
+					} );
+
+
+					// add swipe events
+					$slides.on( {
+						'swipeleft' : function( event ) {
+							config.$bookBlock.bookblock( 'next' );
+							return false;
+						},
+						'swiperight' : function( event ) {
+							config.$bookBlock.bookblock( 'prev' );
+							return false;
+						}
+					} );
+
+					// add keyboard events
+					$( document ).keydown( function(e) {
+						var keyCode = e.keyCode || e.which,
+								arrow = {
+									left : 37,
+									up : 38,
+									right : 39,
+									down : 40
+								};
+
+						switch (keyCode) {
+							case arrow.left:
+								config.$bookBlock.bookblock( 'prev' );
+								break;
+							case arrow.right:
+								config.$bookBlock.bookblock( 'next' );
+								break;
+						}
+					} );
+				};
+
+		return { init : init };
+
+	})();
+
+
+</script>
+<script>
+	Page.init();
+
+</script>
+</body>
+</html>
+<!-- Register -->
+<script src="js/register/formValidator_min.js" type="text/javascript" charset="UTF-8"></script>
+<script src="js/register/jquery-1.2.6.min.js" type=text/javascript></script>
+<script src="js/register/formValidatorRegex.js" type="text/javascript" charset="UTF-8"></script>
+<!-- Register End -->
+<!-- Login -->
+<script type="text/javascript">
+   var jq110=$.noConflict(true);
+ </script>
+
+<script src="js/login/login.js" type="text/javascript"></script>
