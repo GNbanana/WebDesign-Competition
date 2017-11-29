@@ -1,0 +1,114 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+a,img {
+    border:0;
+    text-decoration:none;
+}
+li{
+    list-style: none;
+}
+
+.back_yingxin{
+    width: 100%;
+}
+
+
+.new_pic{
+    width:1200px;
+    height:430px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.new_pic ul li{
+    list-style:none;
+    width:100px;
+    height:429px;
+    float:left;
+}
+.new_pic .l1{
+    background:url("../images/yingxinji4.jpg") no-repeat 100% 100%;
+}
+.new_pic .l2{
+    background:url("../images/yingxinji3.jpg") no-repeat 100% 100%;
+}
+.new_pic .l3{
+    background:url("../images/yingxinji2.jpg") no-repeat 100% 100%;
+}
+.new_pic .l4{
+    background:url("../images/yingxinji1.jpg") no-repeat 100% 100%;
+    width:789px;
+}
+.txt{
+    width:100px;
+    height:429px;
+    background:#000;
+    filter:alpha(opacity=50);
+    background:rgba(0,0,0,.5);
+}
+.txt p{
+    color:#fff;
+    font-family:"微软雅黑";
+    float:left;
+    position:relative;
+}
+.txt .new_title{
+    font-size:22px;
+    margin: 80px 35px;
+    line-height: 50px
+}
+
+.new_block{
+    width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.new_intro{
+    padding: 20px 40px;
+    width:1010px;
+    font-family: 微软雅黑;
+    letter-spacing: 0.2em;
+    line-height: 30px;
+}
+
+.intro0{
+    font-size: 26px;
+    text-align: center;
+    padding: 40px 0;
+}
+.intro1{
+    font-size: 22px;
+    padding: 20px 0;
+}
+
+.intro2{
+    font-size: 14px;
+    text-indent: 2em;
+}
+
+.new_color0{
+    clear: both;
+    margin-top: 100px;
+}
+.new_color1{
+    background: #99cccc;
+}
+
+.new_color2{
+    background: #fff;
+}
+
+.new_color3{
+    background: #336699;
+}
+
+.new_color4{
+    background: #ccffcc;
+}
+
+.new_pic:after{
+    clear: both;
+    display: block;
+}

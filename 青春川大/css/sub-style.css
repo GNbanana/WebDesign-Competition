@@ -1,0 +1,139 @@
+body{
+    border:0px;
+}
+a {
+    text-decoration: none;
+}
+.h1{
+    font-size:28px;
+}
+.search input{
+    width: 100px;
+    height: 25px;
+    padding-left: 15px;
+    border-radius: 30px;
+    border: 2px solid #324b4e;
+    position: relative;
+    transition: .3s linear;
+    outline: none;
+}
+
+.search button{
+    width: 30px;
+    height: 30px;
+    border: none;
+    background: none;
+    position: absolute;
+    top: -1px;
+    right: 0;
+}
+.container{
+    clear: both;
+}
+.header{
+    padding: 14 20%;
+    height: 300px;
+    font-family: "幼圆";
+}
+.headerimg{
+
+    position: absolute;
+    margin-top: 60px;
+    left: 36%;
+    width: 360px;
+    height: 300px;
+    background: url(../images/content_header.png);
+    background-size: cover;
+
+}
+.headertitle{
+    position: absolute;
+    left: 45%;
+    margin-top: 70px;
+}
+.writer{
+    float: right;
+    top: 180px;
+    position: relative;
+    border-top: solid 3px #000;
+    border-bottom: solid 3px #000;
+    border-left: solid 3px #000;
+    padding: 30px 40px;
+}
+.writer span{
+    background: #fff;
+    margin-left: -85px;
+}
+.text-center{
+    text-align: center;
+}
+.mainText{
+    font-family:"Microsoft YaHei";
+    margin-top: 100px;
+}
+.mainText div:nth-child(1){
+    margin: 50px 22% 0%;
+    padding-bottom: 470px;
+    background: url(../images/content_1.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+    line-height: 2;
+    font-size: 14px;
+}
+.mainText div:nth-child(2){
+    padding: 0px 20%;
+    padding-bottom: 218px;
+    background: url(../images/content_2.png);
+    background-position: bottom;
+    /* background-size: 446px 300px; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    line-height: 2;
+    font-size: 14px;
+}
+.text{
+    color: #000;
+    text-align: center;
+}
+.title{
+    width: 100%;
+    position: relative;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.title a{
+    position: absolute;
+    right: 5%;
+    font-weight: 800;
+    font-size: 36px;
+    color: #000;
+    font-family: "Microsoft YaHei UI";
+    text-decoration: none;
+}
+.title img{
+    position: absolute;
+    right:4%;
+    height: 30px;
+    margin-top: 50px;
+}
+/* 自适应*/
+@media screen and (max-width:960px) {
+    .writer{
+        top:330px;
+    }
+
+}
+/*#tabs-left_sm{
+    display:none;
+}
+@media screen and (max-width:768px) {
+    #tabs-left {
+        display:none;
+    }
+    #tabs-left_sm {
+        display:block;
+    }
+}*/
+
+

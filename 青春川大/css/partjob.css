@@ -1,0 +1,26 @@
+﻿
+
+/*引才项目*/
+.clear { display: block !important; width: 0 !important; height: 0 !important; clear: both; overflow: hidden; visibility: hidden; margin: 0 !important; padding: 0 !important; font-size: 0 !important;}
+.f-l { float: left; display: block;}
+.f-r { float: right; display: block;}
+label { font-weight: normal;}
+.content { min-width: 1170px;}
+.pub-width-1170px { width: 1170px; margin: 0 auto;}
+.project { padding-bottom: 30px;}
+.project ul { padding: 0 1px; margin-top: 30px;}
+.project li { width: 250px; margin: 0 10px; text-align: center;}
+.project li a { display: block;}
+.project li .project-pic { position: relative; width: 184px; height: 211px; overflow: hidden; margin: 0 auto;}
+.project li .project-pic img { position: absolute; left: 0; top: 0;}
+.project li .project-pic img.real { width: 184px; height: 211px;}
+.project li:hover .project-txt .name { color: #719DCA;font-family: "微软雅黑 Light";  letter-spacing: 0.1em;}
+.project-price { border-top: 1px solid #CCCCCC; width: 90%; margin: 0 auto; text-align: center; }
+.project-txt .name { line-height: 28px; height: 28px; font-size: 18px; color: #333333;font-weight: bold;  font-family: "微软雅黑 Light";overflow: hidden;}
+.project-price { margin-top: 1px; padding-top: 0;}
+.project-price .area { color: #666666; font-size: 14px; font-family: "微软雅黑 Light";}
+.project-price .price { color: #5bc0de; font-size: 16px; font-family: "Lucida Calligraphy";}
+.project-more-link { text-align: center; margin-top: 30px;}
+.project-more-link a { display: inline-block; padding: 15px 60px; font-size: 18px; color: #5bc0de; border: 2px solid #5bc0de; border-radius: 7px;}
+
+

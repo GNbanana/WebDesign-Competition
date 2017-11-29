@@ -1,0 +1,246 @@
+.search input{
+    width: 100px;
+    height: 25px;
+    padding-left: 15px;
+    border-radius: 30px;
+    border: 2px solid #324b4e;
+    position: relative;
+    transition: .3s linear;
+    outline: none;
+}
+
+.search button{
+    width: 30px;
+    height: 30px;
+    border: none;
+    background: none;
+    position: absolute;
+    top: -1px;
+    right: 0;
+}
+
+.nav_list ul img{
+    float: left;
+    height: 50px;
+    width: 180px;
+    margin-left: 20px;
+    margin-right: 50px;
+}
+
+.title{
+    width: 100%;
+    position: relative;
+    padding-top: 100px;
+}
+.title a{
+    position: absolute;
+    right: 5%;
+    font-weight: 800;
+    font-size: 36px;
+    color: #000;
+    font-family: "Microsoft YaHei UI";
+    text-decoration: none;
+}
+.title img{
+    position: absolute;
+    right:4%;
+    height: 30px;
+    margin-top: 50px;
+}
+
+/*侧栏*/
+li{
+    list-style-type:none;
+}
+
+.articleList{
+    position:fixed;
+    margin-left: 10%;
+    margin-left:calc(10% - 1px);
+    margin-top:-48px;
+    display:none;
+    height:50%;
+    max-height:50%;
+}
+.articleList>ul{
+    width:20%;
+    background: linear-gradient(to right, rgba(0,0,0,0.08) 0%,rgba(0,0,0,0) 3%,rgba(0,0,0,0) 100%), #ffffe6;
+    height: 100%;
+    overflow-y: auto;
+}
+
+.articleList>ul::-webkit-scrollbar-track
+{
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.2);
+    background-color: #F5F5F5;
+}
+
+.articleList>ul::-webkit-scrollbar
+{
+    width: 10px;
+    background-color: #F5F5F5;
+}
+
+.articleList>ul::-webkit-scrollbar-thumb
+{
+    background-color: #666666;
+    background-image: -webkit-linear-gradient(45deg,
+    rgba(255, 255, 255, .4) 25%,
+    transparent 25%,
+    transparent 50%,
+    rgba(255, 255, 255, .4) 50%,
+    rgba(255, 255, 255, .4) 75%,
+    transparent 75%,
+    transparent)
+}
+
+
+
+.articleList>ul>li{
+    margin: 0;
+}
+.articleList ul li a{
+    background: transparent;
+}
+.articlelist>.nav-tabs>li.active>a.list-group-item.active{
+    background: transparent;
+}
+
+.tabs-left{
+    font-family:"Microsoft Yahei";
+    width:10%;
+}
+.tabs-left li{
+    margin:0px;
+}
+.tabs-left a{
+    color:#fc0;
+}
+.fali a.list-group-item.active{
+    background: #000;
+    color: #fff;
+}
+.fali>a{
+    line-height: 3;
+}
+.nav-tabs>li>a{
+    margin-right:0px;
+}
+
+
+.fali .list-group-item.active, .fali .list-group-item.active:focus .fali .list-group-item.active:hover {
+    border: 0;
+    color: #fff;
+}
+.fali a:hover{
+    color: #fc0;
+}
+.list-group ul{
+    -webkit-padding-start: 0px;
+}
+.list-group ul li a.list-group-item:hover{
+    background: #000;
+}
+.list-group-item{
+    border:none;
+    background: transparent;
+}
+.list-group{
+    position:relative;
+}
+.tabs-left{
+    background: #666666;
+}
+.glyphicon{
+    font-size:20px;
+
+}
+
+.container1 {
+    position: relative;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+    padding-top: 150px;
+    padding-bottom: 200px;
+
+}
+.card-container-1 {
+    position: relative;
+    margin: 40px auto;
+    width: 80%;
+    -webkit-perspective: 500px;
+    perspective: 500px;
+}
+.card img {
+    width: 100%;
+}
+
+.card-container-1 {
+    cursor: pointer;
+    cursor: hand;
+    color: #bfd3f8;
+}
+.card-container-1 .card {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-transition: all .2s ease;
+    transition: all .2s ease;
+    border-radius: 2px;
+}
+.card-container-1 .card:last-of-type {
+    background-color: #324b77;
+    z-index: 80;
+}
+.card-container-1 .card:nth-last-of-type(2) {
+    background-color: #4b70b2;
+    z-index: 90;
+}
+.card-container-1 .card:first-of-type {
+    background-color: cornflowerblue;
+    z-index: 100;
+}
+.card-container-1:hover .card:first-of-type {
+    -webkit-transform: rotateX(-20deg) translateZ(0px);
+    transform: rotateX(-20deg) translateZ(0px);
+}
+.card-container-1:hover .card:nth-last-of-type(2) {
+    -webkit-transform: rotateX(-20deg) translateZ(-100px);
+    transform: rotateX(-20deg) translateZ(-100px);
+}
+.card-container-1:hover .card:last-of-type {
+    -webkit-transform: rotateX(-20deg) translateZ(-200px);
+    transform: rotateX(-20deg) translateZ(-200px);
+}
+
+.banner_footer{
+    margin-top: 100px;
+    width: 100%;
+    height: 80px;
+    background: #000;
+    position: relative;
+}
+.banner_copyright{
+    height: 80px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    position: absolute;
+    left: 5%;
+}
+
+.banner_copyright p{
+    line-height: 20px;
+    font-size: 12px;
+    font-family: "Microsoft YaHei";
+    color: #666;
+}
+
+.banner_badge{
+    width: 100px;
+    float: right;
+    margin-right: 50px;
+    margin-top:-50px;
+    z-index: 300;
+}

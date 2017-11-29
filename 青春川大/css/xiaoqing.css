@@ -1,0 +1,80 @@
+body{
+    font-family: 微软雅黑;
+    width: 100%;
+}
+
+.xiaoqinginfo{
+    background: url("../images/xiaoqing_background.png") no-repeat;
+    background-repeat: round;
+    padding-bottom: 150px;
+}
+
+.xiaoqinginfo >img{
+    position: relative;
+    left: 60%;
+    width: 40%;
+}
+
+.xiaoqing_article{
+    width: 100%;
+    text-align: center;
+}
+
+.xiaoqing_title{
+    font-size: 2.0em;
+    font-weight:500;
+    letter-spacing: 0.2em;
+    font-family: 华文琥珀;
+}
+
+.xiaoqing_word{
+    font-size: 1em;
+    letter-spacing: 0.2em;
+    line-height: 30px;
+}
+
+/* footer */
+.footer{
+    padding: 80px 20px 0px 20px;
+}
+
+
+@media(max-width:1023px) {
+    .footer{
+        padding: 10px 20px 10px 20px;
+    }
+}
+
+/* 公告 */
+.file_container > section {
+    margin: 0 auto;
+    width: 70%;
+    color: #fff;
+    text-align: center;
+    font-size: 15px;
+}
+
+.file_button1{
+    width: 80%;
+    margin: 0.5em;
+    padding: 0.5em;
+}
+
+.file_date{
+    color: #fff;
+    text-decoration: none;
+}
+
+.file_button1:hover:after {
+    height: 760%;
+    opacity: 1;
+}
+
+.file_button1:active:after {
+    height: 820%;
+    opacity: 1;
+}
+
+#btn-click div{
+    background: #336699;
+}

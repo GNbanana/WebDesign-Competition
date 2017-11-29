@@ -1,0 +1,252 @@
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+.text-center{
+    text-align: center;
+}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+.clean{
+    clear: both;
+}
+
+/*return to top*/
+.returntop {
+    display: none;
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    border-radius: 8px;
+    background: #333;
+    opacity: 0.5;
+    transition: all 0.5s;
+}
+.returntop span{
+    height: 50px;
+    width: 50px;
+}
+
+.returntop:hover{
+    opacity: 1;
+}
+
+
+/**专题聚焦**/
+
+.zhuantijujiao{
+    clear: both;
+    background: #666;
+}
+.zhuantijujiao ul li{
+}
+.zhuantijujiao ul li:hover{
+   /* border: #53dbff 1px solid;
+    opacity: 1;*/
+}
+.headfont{
+    color: #fff;
+    padding-top: 2%;
+    margin-bottom: 3%;
+}
+.headfont p{
+    color: #fff !important;
+}
+
+/*imgbox*/
+.imgbox{
+    background: #666;
+    padding-left: 10%;
+    padding-top:50px;
+}
+.imgboxa{
+    margin-left: 2%;
+}
+
+.footimg{
+    width: 3%;
+    transition:All 0.2s ease-in-out;
+    -webkit-transition:All 0.2s ease-in-out;
+    -moz-transition:All 0.2s ease-in-out;
+    -o-transition:All 0.2s ease-in-out;
+}
+.footimg:hover{
+    transform:translate(0,-30px);
+    -webkit-transform:translate(0,-30px);
+    -moz-transform:translate(0,-30px);
+    -o-transform:translate(0,-30px);
+    -ms-transform:translate(0,-30px);
+}
+.erpic{
+    position: absolute;
+    width: 8%;
+    left: 30%;
+    display: none;
+    border-radius: 10%;
+    z-index: 1
+}
+
+/*footer*/
+.footer{
+    margin-top: -20px;
+    width: 100%;
+    background: #000;
+    clear: both;
+}
+
+.badge{
+    width: 10%;
+    float: right;
+    margin-right: 50px;
+    margin-top:-60px;
+    z-index: 300;
+}
+
+.aboutus{
+    width: 100%;
+    clear: both;
+    background: #000;
+    height: 80px;
+}
+
+.copyright{
+    float: left;
+    width: 50%;
+    color: #999;
+    font-size: 12px;
+    letter-spacing: 0.1em;
+    position: relative;
+    left: 12%;
+    padding-top: -10px;
+}
+
+.otherinfo{
+    float: left;
+    width: 15%;
+    color: #fff;
+    margin-top: -50px;
+
+}
+.part-a{
+    color: #a6e1ec;
+    font-size: 0.8em;
+    line-height: 25px;
+    letter-spacing: 0.1em;
+}
+.blogroll{
+    float: left;
+    width: 15%;
+    color: #fff;
+    margin-top: -50px;
+
+}
+
+@media(max-width:1200px){
+    .imgbox .imgboxa .footimg {
+        width: 8%;
+    }
+}
+
+@media(max-width:800px){
+    .imgbox .imgboxa .footimg {
+        width:12%;
+    }
+}
+
+@media(max-width:500px){
+    .imgbox .imgboxa .footimg {
+        width:15%;
+    }
+}
+
+@media(max-width:1023px) {
+  .imgbox {padding: 20px 0;width: 100%;text-align: center;}
+
+  .aboutus {height: auto; padding: 10px 0;}
+  .copyright, .otherinfo, .blogroll {
+    width: 100%;
+    float: none;
+    left: auto;
+    text-align: center;
+    display: inline;
+  }
+  .copyright p {padding: 0 10px;}
+  .copyright span {display: inline-block;}
+  .aboutus ul {
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -webkit-padding-start: 0;
+    margin: 0 20px;
+    text-align: center;
+  }
+  .aboutus ul li {display: inline-block;}
+}
+
+
+
+/*二级title*/
+.content_title{
+    width: 100%;
+    margin-top: -70px;
+}
+
+/* 左侧固定导航 */
+.fix_navbox {
+    position: fixed;
+    left: 0;
+    top: 35%;
+    z-index: 1000;
+}
+
+.fix_nav {
+    list-style: none;
+    display: block;
+    width: 200px;
+    position: relative;
+    left: 1px;
+    padding: 60px 0 60px 0;
+    background: url(../images/shad2.png) no-repeat;
+    -webkit-background-size: 50% 100%;
+}
+
+.fix_nav li {
+    margin: 8px 0 0 0;
+}
+
+.fix_nav li a {
+    -webkit-transition: all 0.3s ease-out;
+    background: #669999 url(../images/border.png) no-repeat;
+    color: #fff;
+    padding: 10px 5px 10px 0px;
+    -webkit-border-top-right-radius: 10px;
+    -webkit-border-bottom-right-radius: 10px;
+    width: 100px;
+    display: block;
+    text-decoration: none;
+    -webkit-box-shadow: 2px 2px 4px #888;
+    letter-spacing: 0.1em;
+    font-family: 微软雅黑;
+}
+
+.fix_nav li a:hover {
+    background: #fff url(../images/border.png) no-repeat;
+    color: #669999;
+    padding: 10px 15px 10px 30px;
+    letter-spacing: 0.2em;
+    font-weight: 500;
+}

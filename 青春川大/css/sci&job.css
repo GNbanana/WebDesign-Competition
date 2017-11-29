@@ -1,0 +1,239 @@
+
+/* General Demo Style */
+*, *:after, *:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.white{
+    background-color: white;
+}
+/*part1*/
+#part1{
+    width: 100%;
+    display: block;
+}
+#part1 img{
+    width: 100%;
+}
+.head{
+    width: 60%;
+    border:1px solid blue;
+    margin: auto 20%;
+}
+.headbox{
+    width: 19%;
+    margin:auto 35%;
+    margin-top: 8%;
+    border:1px solid blue;
+    border-radius:100%;
+
+}
+/*part2*/
+#part2{
+    width: 100%;
+    height: auto;
+    background-color:#666666;
+}
+.hlfont{
+    color:#ffffff;
+}
+.hlfont h4{
+    font-family: "Lucida Calligraphy";
+}
+.hlfont h1{
+    font-size: 30px;
+    letter-spacing: 0.2em;
+    font-family: "Microsoft YaHei UI";
+    font-weight:400;
+}
+.l1{
+    width: 80%;
+    height: 4px;
+    background: #fff;
+}
+.grid {
+    padding: 30px 20px 150px 20px;
+    max-width: 1300px;
+    margin: 0 auto;
+    list-style: none;
+    text-align: center;
+}
+.grid li {
+    display: inline-block;
+    width: 610px;
+    margin: 20px auto;
+    padding: 20px;
+    text-align: left;
+    position: relative;
+}
+.grid figure {
+    margin: 0;
+    position: relative;
+}
+.grid figure img {
+    max-width: 100%;
+    display: block;
+    position: relative;
+}
+.grid figcaption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    background: #FFFFFF;
+    color: #55ddff;
+}
+.grid figcaption h3 {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    z-index: 6;
+}
+.grid figcaption p{
+    font-family: 幼圆;
+    color: #303030;
+    font-weight: bold;
+}
+.grid figcaption span {
+    font-family: 幼圆;
+    color: #000000;
+    font-weight: bold;
+}
+.grid figcaption a {
+    font-family: 幼圆;
+    color: #000000;
+    font-weight: bold;
+    color: #ffffff;
+}
+.boxa {
+    text-align: center;
+    padding: 5px 10px;
+    border-radius: 2px;
+    display: inline-block;
+    background:  #55ddff;
+    color: #ffffff;
+}
+.cs-style-7 li:first-child { z-index: 6; }
+.cs-style-7 li:nth-child(2) { z-index: 5; }
+.cs-style-7 li:nth-child(3) { z-index: 4; }
+.cs-style-7 li:nth-child(4) { z-index: 3; }
+.cs-style-7 li:nth-child(5) { z-index: 2; }
+.cs-style-7 li:nth-child(6) { z-index: 1; }
+.cs-style-7 figure img {
+    z-index: 10;
+}
+.cs-style-7 figcaption {
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transition: opacity 0.3s, height 0.3s, box-shadow 0.3s;
+    -moz-transition: opacity 0.3s, height 0.3s, box-shadow 0.3s;
+    transition: opacity 0.3s, height 0.3s, box-shadow 0.3s;
+    box-shadow: 0 0 0 0px #FFFFFF;
+}
+.no-touch .cs-style-7 figure:hover figcaption,
+.cs-style-7 figure.cs-hover figcaption {
+    opacity: 1;
+    height: 180%;
+    box-shadow: 0 0 0 10px #FFFFFF;
+}
+.cs-style-7 figcaption h3 {
+    margin-top: 34%;
+}
+.cs-style-7 figcaption h3,
+.cs-style-7 figcaption span,
+.cs-style-7 figcaption a {
+    opacity: 0;
+    -webkit-transition: opacity 0s;
+    -moz-transition: opacity 0s;
+    transition: opacity 0s;
+}
+.cs-style-7 figcaption a {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+.no-touch .cs-style-7 figure:hover figcaption h3,
+.no-touch .cs-style-7 figure:hover figcaption span,
+.no-touch .cs-style-7 figure:hover figcaption a,
+.cs-style-7 figure.cs-hover figcaption h3,
+.cs-style-7 figure.cs-hover figcaption span,
+.cs-style-7 figure.cs-hover figcaption a {
+    -webkit-transition: opacity 0.3s 0.2s;
+    -moz-transition: opacity 0.3s 0.2s;
+    transition: opacity 0.3s 0.2s;
+    opacity: 1;
+}
+@media screen and (max-width: 31.5em) {
+    .grid {
+        padding: 10px 10px 100px 10px;
+    }
+    .grid li {
+        width: 100%;
+        min-width: 300px;
+    }
+}
+
+/*part3*/
+#part3{
+    width: 100%;
+    height: 500px;
+}
+.hlfont2{
+    color: #5bc0de;
+}
+.hlfont2 h1{
+    font-size: 30px;
+    letter-spacing: 0.2em;
+    font-family: "Microsoft YaHei UI";
+    font-weight:400;
+}
+.hlfont2 h4{
+    font-family: "Lucida Calligraphy";
+}
+.l2{
+    width: 80%;
+    height: 4px;
+    background: #5bc0de;
+}
+#jswbox{
+    width:1100px;
+    margin:0 auto;
+    height:400px;
+    position:relative;
+}
+#jswbox ul{
+    position:relative;
+    height:400px;
+}
+#jswbox li{
+    position:absolute;
+    width:0;
+    height:0;
+    z-index:0;
+    cursor:pointer;
+    overflow:hidden;
+    box-shadow:5px 5px 20px #666;
+}
+#jswbox li img{
+    width:100%;
+    height:100%;
+    vertical-align:top;
+    float:left;
+}
+#jswbox .prev, #jswbox .next{display:none;}
+@media screen and (max-width: 25em) {
+    .codrops-icon span {
+        display: none;
+    }
+
+}
+
+.triangle{
+    margin-top: -45px !important;
+    margin-bottom: 80px;
+}

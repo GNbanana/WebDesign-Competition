@@ -1,0 +1,264 @@
+/*nav*/
+#title{
+    float: left;
+    height: 50px;
+    padding-left: 20px;
+    padding-right: 50px;
+}
+
+.nav{
+    top: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    height: 80px;
+}
+.nav_img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50px;
+}
+.nav_list.default+.nav_img{
+    display: none;
+}
+.nav_list.default{
+    margin-top: 0;
+}
+
+.nav_list{
+    width: 100%;
+    height: 50px;
+    margin: -50px 0 0 0;
+    background: linear-gradient(to bottom, rgba(102,102,102,1) 0%,rgba(102,102,102,0.78) 29%,rgba(102,102,102,0) 100%);
+    text-shadow: 1px 1px 5px #000000;
+    -webkit-transition: all 0.6s;
+    -moz-transition: all 0.6s;
+    -ms-transition: all 0.6s;
+    -o-transition: all 0.6s;
+    transition: all 0.6s;
+}
+.nav_list:hover, .nav_list.active{
+    background: rgba(102,102,102,0.9);
+}
+
+.nav_list ul{
+    margin: 0;
+}
+
+.nav_list ul li{
+    float: left;
+    position: relative;
+    font-size: 14px;
+    font-family: "Microsoft YaHei UI Light";
+    padding-left: 30px;
+    padding-right: 30px;
+    line-height: 50px;
+    color: #fff;
+    cursor: pointer;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+.nav_list ul li:hover{
+    background: #000;
+    opacity: 0.9;
+}
+
+.nav_list ul li ul{
+    clear: both;
+    position: absolute;
+    margin-left: -70px;
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transiton: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+}
+.nav_list ul li a{
+    color: #fff;
+    display: block;
+    text-decoration: none;
+}
+.nav_list ul li ul li{
+    clear: both;
+    background: #000;
+    display: block;
+    text-shadow: 0 -1px 0 #000;
+    font-size: 12px;
+    width: 150px;
+    height: 40px;
+    line-height: 40px;
+}
+
+.nav_list ul li ul li:hover{
+    background: #555;
+}
+
+.nav_list ul li:hover ul{
+    display: block;
+    opacity: 0.9;
+    visibility: visible;
+}
+
+.search{
+   height: 50px;
+}
+
+.search form{
+    position: relative;
+    width: 150px;
+}
+
+.searth:after{
+    content:"";
+    clear: both;
+    display: table;
+}
+
+.search form{
+    width: auto;
+    float: right;
+    margin-right: 30px;
+    margin-top: 10px;
+
+}
+
+.search input{
+    width: 100px;
+    height: 22px;
+    padding-left: 15px;
+    border-radius: 30px;
+    border: 2px solid #324b4e;
+    position: relative;
+    transition: .3s linear;
+    outline: none;
+}
+
+.search input:focus {
+    width: 120px;
+}
+
+.search button{
+    width: 30px;
+    height: 30px;
+    border: none;
+    background: none;
+    position: absolute;
+    top: -0.5px;
+    right: 0;
+}
+
+.search button:before{
+    content:"\f002";
+    font-family: FontAwesome;
+    color: #000;
+}
+
+
+.hide{
+  opacity: 0;
+}
+
+.navListBox{
+    position:absolute;
+    left: 47%;
+    top:650px;
+    z-index:10;
+}
+.navListBox li{
+    width:12px;
+    height:12px;
+    float:left;
+    margin-left:5px;
+    border-radius:50%;
+    overflow:hidden;
+}
+.navListBox li:first-child{
+    margin-left:0;
+}
+.navListBox li a{
+    display:block;
+    width:100%;
+    height:100%;
+    border-radius:50%;
+    background-color:#fff;
+    box-shadow:0 0 5px #666 inset;
+}
+.navListBox li a.active{
+    background-color:#55ddff;
+}
+
+.triangle{
+    margin-top: -60px;
+    width: 100%;
+}
+.triangle_down{
+    width:0;
+    height:0;
+    border-width:30px 30px 0;
+    border-style:solid;
+    border-color:#333 transparent transparent;/*灰 透明 透明 */
+    margin:40px auto;
+    position:relative;
+}
+.triangle_down span{
+    display:block;
+    width:0;
+    height:0;
+    border-width:28px 28px 0;
+    border-style:solid;
+    border-color:#fc0 transparent transparent;/*黄 透明 透明 */
+    position:absolute;
+    top:0px;
+    left:0px;
+}
+
+@media(max-width:1023px) {
+  .nav {height: auto; background: rgba(0,0,0,0.1);}
+  .nav_list ul {
+    padding: 0;
+  }
+  .nav_list ul li, .nav_list .search, .nav_img {display: none; transition: all 0.6s;}
+  #mobnavbtn {
+    position: absolute;
+    right: 5%;
+    top: 5px;
+    color: #fff;
+    font-size: 25px;
+    cursor: pointer;
+  }
+  .nav_list ul.mobactive ul{
+    position: static;
+    margin-left: -30px;
+    width: 100%;
+    z-index: 99999;
+  }
+  .nav_list ul.mobactive li {
+    display: block;
+    width: 100%;
+    background: rgba(12,12,12,0.7);
+  }
+  .nav_list ul.mobactive li:hover {
+    background: rgba(0,0,0,0.9);
+  }
+  div.nav_list.active .search {
+    display: block;
+    width: 100%;
+  }
+  .search form {
+    float: left;
+    margin: 10px 20px;
+  }
+  #title {padding: 0;}
+
+}
+@media(min-width:1024px) {
+  #mobnavbtn {display:none;}
+}
